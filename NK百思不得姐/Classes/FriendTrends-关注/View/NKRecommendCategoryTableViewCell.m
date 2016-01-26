@@ -21,13 +21,6 @@
 - (void)awakeFromNib {
     self.backgroundColor = Color(244, 244, 244);
     self.selectedIndicator.backgroundColor = Color(219, 21, 26);
-
-    // 当cell的selection为None时, cell被选中时, 内部的子控件就不会进入高亮状态
-    //    self.textLabel.textColor = XMGRGBColor(78, 78, 78);
-    //    self.textLabel.highlightedTextColor = XMGRGBColor(219, 21, 26);
-    //    UIView *bg = [[UIView alloc] init];
-    //    bg.backgroundColor = [UIColor clearColor];
-    //    self.selectedBackgroundView = bg;
 }
 - (void)setCategory:(NKRecommendCategory *)category
 {

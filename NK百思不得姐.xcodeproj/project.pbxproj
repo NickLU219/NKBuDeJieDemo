@@ -27,6 +27,14 @@
 		E317619A1C55DF24000B3DF0 /* NKLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31761981C55DF24000B3DF0 /* NKLoginRegisterViewController.xib */; };
 		E317619D1C55F259000B3DF0 /* NKVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E317619C1C55F259000B3DF0 /* NKVerticalButton.m */; };
 		E31761A01C5641B1000B3DF0 /* NKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E317619F1C5641B1000B3DF0 /* NKTextField.m */; };
+		E31761A31C564EC1000B3DF0 /* NKPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761A21C564EC1000B3DF0 /* NKPushGuideView.m */; };
+		E31761A51C564ED0000B3DF0 /* NKPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31761A41C564ED0000B3DF0 /* NKPushGuideView.xib */; };
+		E31761DC1C571528000B3DF0 /* NKTopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761DB1C571528000B3DF0 /* NKTopicTableViewController.m */; };
+		E31761DF1C571682000B3DF0 /* NKTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761DE1C571682000B3DF0 /* NKTopic.m */; };
+		E31761E31C5716E0000B3DF0 /* NKTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761E11C5716E0000B3DF0 /* NKTopicCell.m */; };
+		E31761E41C5716E0000B3DF0 /* NKTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31761E21C5716E0000B3DF0 /* NKTopicCell.xib */; };
+		E31761E71C571855000B3DF0 /* NSDate+NKCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761E61C571855000B3DF0 /* NSDate+NKCompare.m */; };
+		E31761E91C571A39000B3DF0 /* NKConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E31761E81C571A39000B3DF0 /* NKConst.m */; };
 		E3FC71A71C535C99008BAC9B /* NKRecomendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */; };
 		E3FC71A81C535C99008BAC9B /* NKRecomendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */; };
 		E3FC71AD1C53633A008BAC9B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AC1C53633A008BAC9B /* Foundation+Log.m */; };
@@ -102,6 +110,20 @@
 		E317619C1C55F259000B3DF0 /* NKVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKVerticalButton.m; sourceTree = "<group>"; };
 		E317619E1C5641B1000B3DF0 /* NKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTextField.h; sourceTree = "<group>"; };
 		E317619F1C5641B1000B3DF0 /* NKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTextField.m; sourceTree = "<group>"; };
+		E31761A11C564EC1000B3DF0 /* NKPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKPushGuideView.h; sourceTree = "<group>"; };
+		E31761A21C564EC1000B3DF0 /* NKPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKPushGuideView.m; sourceTree = "<group>"; };
+		E31761A41C564ED0000B3DF0 /* NKPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKPushGuideView.xib; sourceTree = "<group>"; };
+		E31761DA1C571528000B3DF0 /* NKTopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTopicTableViewController.h; sourceTree = "<group>"; };
+		E31761DB1C571528000B3DF0 /* NKTopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTopicTableViewController.m; sourceTree = "<group>"; };
+		E31761DD1C571682000B3DF0 /* NKTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTopic.h; sourceTree = "<group>"; };
+		E31761DE1C571682000B3DF0 /* NKTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTopic.m; sourceTree = "<group>"; };
+		E31761E01C5716E0000B3DF0 /* NKTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTopicCell.h; sourceTree = "<group>"; };
+		E31761E11C5716E0000B3DF0 /* NKTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTopicCell.m; sourceTree = "<group>"; };
+		E31761E21C5716E0000B3DF0 /* NKTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKTopicCell.xib; sourceTree = "<group>"; };
+		E31761E51C571855000B3DF0 /* NSDate+NKCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NKCompare.h"; sourceTree = "<group>"; };
+		E31761E61C571855000B3DF0 /* NSDate+NKCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NKCompare.m"; sourceTree = "<group>"; };
+		E31761E81C571A39000B3DF0 /* NKConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKConst.m; sourceTree = "<group>"; };
+		E31761EA1C571A50000B3DF0 /* NKConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKConst.h; sourceTree = "<group>"; };
 		E3FC71A41C535C99008BAC9B /* NKRecomendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRecomendViewController.h; sourceTree = "<group>"; };
 		E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRecomendViewController.m; sourceTree = "<group>"; };
 		E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKRecomendViewController.xib; sourceTree = "<group>"; };
@@ -255,6 +277,8 @@
 				E30B17D31C531D8C002554AC /* NKEssenceViewController.m */,
 				E3FC71C91C550CFB008BAC9B /* NKRecommendTagsViewController.h */,
 				E3FC71CA1C550CFB008BAC9B /* NKRecommendTagsViewController.m */,
+				E31761DA1C571528000B3DF0 /* NKTopicTableViewController.h */,
+				E31761DB1C571528000B3DF0 /* NKTopicTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +288,8 @@
 			children = (
 				E3FC71CC1C5510AB008BAC9B /* NKRecommendTag.h */,
 				E3FC71CD1C5510AB008BAC9B /* NKRecommendTag.m */,
+				E31761DD1C571682000B3DF0 /* NKTopic.h */,
+				E31761DE1C571682000B3DF0 /* NKTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +300,9 @@
 				E3FC71CF1C55122F008BAC9B /* NKRecommendTagCell.h */,
 				E3FC71D01C55122F008BAC9B /* NKRecommendTagCell.m */,
 				E3FC71D11C55122F008BAC9B /* NKRecommendTagCell.xib */,
+				E31761E01C5716E0000B3DF0 /* NKTopicCell.h */,
+				E31761E11C5716E0000B3DF0 /* NKTopicCell.m */,
+				E31761E21C5716E0000B3DF0 /* NKTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -401,14 +430,16 @@
 		E30B17E81C531D8C002554AC /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				E30B17F01C531D8C002554AC /* Controller */,
+				E30B17F51C531D8C002554AC /* View */,
+				E30B17EB1C531D8C002554AC /* Category */,
 				E3FC71AC1C53633A008BAC9B /* Foundation+Log.m */,
 				E30B17E91C531D8C002554AC /* AppDelegate.h */,
 				E30B17EA1C531D8C002554AC /* AppDelegate.m */,
 				E30B17F31C531D8C002554AC /* main.m */,
 				E30B17F41C531D8C002554AC /* NKBSBDJ.pch */,
-				E30B17F01C531D8C002554AC /* Controller */,
-				E30B17F51C531D8C002554AC /* View */,
-				E30B17EB1C531D8C002554AC /* Category */,
+				E31761EA1C571A50000B3DF0 /* NKConst.h */,
+				E31761E81C571A39000B3DF0 /* NKConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -420,6 +451,8 @@
 				E30B17ED1C531D8C002554AC /* UIView+Extension.m */,
 				E30B18021C531DFC002554AC /* UIBarButtonItem+NKExtension.h */,
 				E30B18031C531DFC002554AC /* UIBarButtonItem+NKExtension.m */,
+				E31761E51C571855000B3DF0 /* NSDate+NKCompare.h */,
+				E31761E61C571855000B3DF0 /* NSDate+NKCompare.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -440,6 +473,9 @@
 			children = (
 				E30B17F61C531D8C002554AC /* NKTabBar.h */,
 				E30B17F71C531D8C002554AC /* NKTabBar.m */,
+				E31761A11C564EC1000B3DF0 /* NKPushGuideView.h */,
+				E31761A21C564EC1000B3DF0 /* NKPushGuideView.m */,
+				E31761A41C564ED0000B3DF0 /* NKPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -557,9 +593,11 @@
 				E3FC71C81C53FCA9008BAC9B /* NKRecommendUserTableViewCell.xib in Resources */,
 				E3FC71A81C535C99008BAC9B /* NKRecomendViewController.xib in Resources */,
 				E317619A1C55DF24000B3DF0 /* NKLoginRegisterViewController.xib in Resources */,
+				E31761E41C5716E0000B3DF0 /* NKTopicCell.xib in Resources */,
 				E3FC71BB1C53F6EA008BAC9B /* NKRecommendCategoryTableViewCell.xib in Resources */,
 				E30B17871C5281F4002554AC /* Assets.xcassets in Resources */,
 				E3FC71D31C55122F008BAC9B /* NKRecommendTagCell.xib in Resources */,
+				E31761A51C564ED0000B3DF0 /* NKPushGuideView.xib in Resources */,
 				E30B18461C534A0F002554AC /* NKFriendTrendsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,13 +675,18 @@
 				E30B17FA1C531D8C002554AC /* NKMeViewController.m in Sources */,
 				E3FC71A71C535C99008BAC9B /* NKRecomendViewController.m in Sources */,
 				E30B17F81C531D8C002554AC /* NKEssenceViewController.m in Sources */,
+				E31761E31C5716E0000B3DF0 /* NKTopicCell.m in Sources */,
 				E30B17FB1C531D8C002554AC /* NKNewViewController.m in Sources */,
 				E30B17F91C531D8C002554AC /* NKFriendTrendsViewController.m in Sources */,
 				E31761A01C5641B1000B3DF0 /* NKTextField.m in Sources */,
 				E30B18011C531D8C002554AC /* NKTabBar.m in Sources */,
+				E31761DF1C571682000B3DF0 /* NKTopic.m in Sources */,
 				E31761991C55DF24000B3DF0 /* NKLoginRegisterViewController.m in Sources */,
+				E31761E71C571855000B3DF0 /* NSDate+NKCompare.m in Sources */,
+				E31761DC1C571528000B3DF0 /* NKTopicTableViewController.m in Sources */,
 				E30B17FC1C531D8C002554AC /* AppDelegate.m in Sources */,
 				E30B18001C531D8C002554AC /* main.m in Sources */,
+				E31761E91C571A39000B3DF0 /* NKConst.m in Sources */,
 				E3FC71B61C53F67E008BAC9B /* NKRecommendCategory.m in Sources */,
 				E3FC71D21C55122F008BAC9B /* NKRecommendTagCell.m in Sources */,
 				E3FC71C71C53FCA9008BAC9B /* NKRecommendUserTableViewCell.m in Sources */,
@@ -655,6 +698,7 @@
 				E30B18441C533A50002554AC /* NKNavigationController.m in Sources */,
 				E3FC71BE1C53FC01008BAC9B /* NKRecommendUser.m in Sources */,
 				E3FC71BA1C53F6EA008BAC9B /* NKRecommendCategoryTableViewCell.m in Sources */,
+				E31761A31C564EC1000B3DF0 /* NKPushGuideView.m in Sources */,
 				E3FC71CB1C550CFB008BAC9B /* NKRecommendTagsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,7 +771,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -765,7 +809,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

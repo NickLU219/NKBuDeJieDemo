@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NKTabBarViewController.h"
-
+#import "NKPushGuideView.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +26,9 @@
     self.window.rootViewController = [[NKTabBarViewController alloc] init] ;
 
     [self.window makeKeyAndVisible];
+
+    [NKPushGuideView show];
+
     return YES;
 }
 
