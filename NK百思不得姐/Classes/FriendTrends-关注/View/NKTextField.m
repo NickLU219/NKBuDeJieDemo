@@ -12,8 +12,7 @@ static NSString * const NKPlacerholderColorKeyPath = @"_placeholderLabel.textCol
 
 @implementation NKTextField
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
     // 设置光标颜色和文字颜色一致
     self.tintColor = self.textColor;
 
@@ -24,8 +23,7 @@ static NSString * const NKPlacerholderColorKeyPath = @"_placeholderLabel.textCol
 /**
  * 当前文本框聚焦时就会调用
  */
-- (BOOL)becomeFirstResponder
-{
+- (BOOL)becomeFirstResponder {
     // 修改占位文字颜色
     [self setValue:self.textColor forKeyPath:NKPlacerholderColorKeyPath];
     return [super becomeFirstResponder];
@@ -34,8 +32,7 @@ static NSString * const NKPlacerholderColorKeyPath = @"_placeholderLabel.textCol
 /**
  * 当前文本框失去焦点时就会调用
  */
-- (BOOL)resignFirstResponder
-{
+- (BOOL)resignFirstResponder {
     // 修改占位文字颜色
     [self setValue:[UIColor grayColor] forKeyPath:NKPlacerholderColorKeyPath];
     return [super resignFirstResponder];

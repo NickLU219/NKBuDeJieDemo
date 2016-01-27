@@ -25,8 +25,7 @@
 /**
  * 可以在这个方法中拦截所有push进来的控制器
  */
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.childViewControllers.count > 0) { // 如果push进来的不是第一个控制器
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:@"返回" forState:UIControlStateNormal];
@@ -53,8 +52,7 @@
 
 }
 
-- (void)back
-{
+- (void)back {
     [self popViewControllerAnimated:YES];
 }
 

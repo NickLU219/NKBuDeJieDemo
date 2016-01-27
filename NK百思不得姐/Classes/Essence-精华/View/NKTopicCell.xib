@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -22,13 +22,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEk-RC-Mg9" userLabel="昵称">
-                        <rect key="frame" x="55" y="10" width="38" height="18"/>
+                        <rect key="frame" x="55" y="10" width="37.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewd-Iw-Pt6" userLabel="时间">
-                        <rect key="frame" x="55" y="30" width="31" height="15"/>
+                        <rect key="frame" x="55" y="30" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -151,16 +151,25 @@
                             <constraint firstAttribute="width" constant="14" id="m6z-mS-tFi"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7Z-bK-Ver">
+                        <rect key="frame" x="10" y="55" width="300" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="dNv-0L-wST" firstAttribute="top" secondItem="6bm-xa-h2J" secondAttribute="top" constant="10" id="36K-8b-qqp"/>
                     <constraint firstItem="ewd-Iw-Pt6" firstAttribute="leading" secondItem="cEk-RC-Mg9" secondAttribute="leading" id="7nd-qH-BgD"/>
+                    <constraint firstItem="N7Z-bK-Ver" firstAttribute="trailing" secondItem="6wB-na-q8N" secondAttribute="trailing" id="9GE-tU-HhG"/>
                     <constraint firstAttribute="trailing" secondItem="6wB-na-q8N" secondAttribute="trailing" constant="10" id="Ssu-0j-H48"/>
                     <constraint firstItem="dNv-0L-wST" firstAttribute="trailing" secondItem="jQL-oz-8qa" secondAttribute="trailing" constant="-5" id="TLO-Vw-Tlb"/>
                     <constraint firstItem="dNv-0L-wST" firstAttribute="top" secondItem="cEk-RC-Mg9" secondAttribute="top" id="Wyi-DR-Zea"/>
                     <constraint firstAttribute="trailing" secondItem="NCs-SL-xjZ" secondAttribute="trailing" id="XLI-Zp-a8U"/>
+                    <constraint firstItem="N7Z-bK-Ver" firstAttribute="leading" secondItem="dNv-0L-wST" secondAttribute="leading" id="Y6R-gd-Wla"/>
                     <constraint firstItem="dNv-0L-wST" firstAttribute="leading" secondItem="6bm-xa-h2J" secondAttribute="leading" constant="10" id="YKC-e7-Zjj"/>
                     <constraint firstItem="ewd-Iw-Pt6" firstAttribute="bottom" secondItem="dNv-0L-wST" secondAttribute="bottom" id="YkH-pC-8w6"/>
+                    <constraint firstItem="N7Z-bK-Ver" firstAttribute="top" secondItem="dNv-0L-wST" secondAttribute="bottom" constant="10" id="Z8r-Wz-ab3"/>
                     <constraint firstItem="cEk-RC-Mg9" firstAttribute="leading" secondItem="dNv-0L-wST" secondAttribute="trailing" constant="10" id="f5v-fc-jg7"/>
                     <constraint firstItem="6wB-na-q8N" firstAttribute="top" secondItem="cEk-RC-Mg9" secondAttribute="top" id="haM-rv-RQ3"/>
                     <constraint firstItem="NCs-SL-xjZ" firstAttribute="leading" secondItem="6bm-xa-h2J" secondAttribute="leading" id="tvz-K2-2o7"/>
@@ -177,6 +186,7 @@
                 <outlet property="profileImageView" destination="dNv-0L-wST" id="gf3-WR-NSF"/>
                 <outlet property="shareButton" destination="0k8-P0-EJd" id="iso-h5-Xde"/>
                 <outlet property="sinaVView" destination="jQL-oz-8qa" id="6N8-NC-v3A"/>
+                <outlet property="text_label" destination="N7Z-bK-Ver" id="eEa-KU-fRt"/>
             </connections>
             <point key="canvasLocation" x="354" y="331.5"/>
         </tableViewCell>

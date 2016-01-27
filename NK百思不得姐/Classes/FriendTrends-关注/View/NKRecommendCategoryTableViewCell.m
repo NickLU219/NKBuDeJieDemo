@@ -22,15 +22,13 @@
     self.backgroundColor = Color(244, 244, 244);
     self.selectedIndicator.backgroundColor = Color(219, 21, 26);
 }
-- (void)setCategory:(NKRecommendCategory *)category
-{
+- (void)setCategory:(NKRecommendCategory *)category {
     _category = category;
 
     self.textLabel.text = category.name;
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
 
     // 重新调整内部textLabel的frame
@@ -38,8 +36,7 @@
     self.textLabel.height = self.contentView.height - 2 * self.textLabel.y;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     self.selectedIndicator.hidden = !selected;

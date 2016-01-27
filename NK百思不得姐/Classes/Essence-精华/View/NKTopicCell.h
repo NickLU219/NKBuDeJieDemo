@@ -10,6 +10,8 @@
 
 @class NKTopic;
 @interface NKTopicCell : UITableViewCell
+
+
 /** 帖子数据 */
 @property (nonatomic, strong) NKTopic *topic;
 @end

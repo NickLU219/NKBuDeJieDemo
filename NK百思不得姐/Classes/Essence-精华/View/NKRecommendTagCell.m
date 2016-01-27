@@ -22,8 +22,7 @@
     // Initialization code
 }
 
-- (void)setRecommendTag:(NKRecommendTag *)recommendTag
-{
+- (void)setRecommendTag:(NKRecommendTag *)recommendTag {
     _recommendTag = recommendTag;
 
     [self.imageListImageView sd_setImageWithURL:[NSURL URLWithString:recommendTag.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
@@ -37,8 +36,7 @@
     self.subNumberLabel.text = subNumber;
 }
 
-- (void)setFrame:(CGRect)frame
-{
+- (void)setFrame:(CGRect)frame {
     frame.origin.x = 5;
     frame.size.width -= 2 * frame.origin.x;
     frame.size.height -= 1;

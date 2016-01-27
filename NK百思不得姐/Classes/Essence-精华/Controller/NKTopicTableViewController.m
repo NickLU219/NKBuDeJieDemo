@@ -76,8 +76,7 @@ static NSString * const NKTopicCellId = @"topic";
 /**
  * 加载新的帖子数据
  */
-- (void)loadNewTopics
-{
+- (void)loadNewTopics {
     // 结束上啦
     [self.tableView.mj_footer endRefreshing];
 
@@ -114,16 +113,10 @@ static NSString * const NKTopicCellId = @"topic";
     }];
 }
 
-// 先下拉刷新, 再上拉刷新第5页数据
-
-// 下拉刷新成功回来: 只有一页数据, page == 0
-// 上啦刷新成功回来: 最前面那页 + 第5页数据
-
 /**
  * 加载更多的帖子数据
  */
-- (void)loadMoreTopics
-{
+- (void)loadMoreTopics {
     // 结束下拉
     [self.tableView.mj_header endRefreshing];
 
@@ -179,9 +172,10 @@ static NSString * const NKTopicCellId = @"topic";
 }
 
 #pragma mark - 代理方法
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 200;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NKTopic *topic = self.topics[indexPath.row];
+
+    return topic.cellHeight;
 }
 
 

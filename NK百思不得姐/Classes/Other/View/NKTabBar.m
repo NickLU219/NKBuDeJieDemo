@@ -17,8 +17,7 @@
 @end
 @implementation NKTabBar
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
 
@@ -32,8 +31,7 @@
     return self;
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     // 设置发布按钮的frame

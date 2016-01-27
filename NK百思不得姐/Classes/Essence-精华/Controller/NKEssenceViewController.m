@@ -42,8 +42,7 @@
 /**
  * 初始化子控制器
  */
-- (void)setupChildVces
-{
+- (void)setupChildVces {
     NKTopicTableViewController *word = [[NKTopicTableViewController alloc] init];
     word.title = @"段子";
     word.type = NKTopicTypeWord;
@@ -78,8 +77,8 @@
     UIView *titlesView = [[UIView alloc] init];
     titlesView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
     titlesView.width = self.view.width;
-    titlesView.height = 35;
-    titlesView.y = 64;
+    titlesView.height = NKTitilesViewH;
+    titlesView.y =NKTitilesViewY;
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
 
@@ -92,16 +91,16 @@
     self.indicatorView = indicatorView;
 
     // 内部的子标签
-    NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
-    CGFloat width = titlesView.width / titles.count;
+    CGFloat width = titlesView.width / self.childViewControllers.count;
     CGFloat height = titlesView.height;
-    for (NSInteger i = 0; i<titles.count; i++) {
+    for (NSInteger i = 0; i<self.childViewControllers.count; i++) {
         UIButton *button = [[UIButton alloc] init];
         button.tag = i;
         button.height = height;
         button.width = width;
         button.x = i * width;
-        [button setTitle:titles[i] forState:UIControlStateNormal];
+        UIViewController *vc = self.childViewControllers[i];
+        [button setTitle:vc.title forState:UIControlStateNormal];
         //        [button layoutIfNeeded]; // 强制布局(强制更新子控件的frame)
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
@@ -120,7 +119,6 @@
             self.indicatorView.centerX = button.centerX;
         }
     }
-
     [titlesView addSubview:indicatorView];
 
 }

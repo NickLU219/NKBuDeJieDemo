@@ -8,13 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    NKTopicTypeAll = 1,
-    NKTopicTypePicture = 10,
-    NKTopicTypeWord = 29,
-    NKTopicTypeVoice = 31,
-    NKTopicTypeVideo = 41
-} NKTopicType;
 
 @interface NKTopicTableViewController : UITableViewController
 /** 帖子类型(交给子类去实现) */

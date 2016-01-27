@@ -9,6 +9,8 @@
 #import "NKTopicCell.h"
 #import "NKTopic.h"
 #import <UIImageView+WebCache.h>
+#import "NKTopicPictureView.h"
+
 
 @interface NKTopicCell ()
 /** 头像 */
@@ -27,19 +29,29 @@
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 /** 新浪加V */
 @property (weak, nonatomic) IBOutlet UIImageView *sinaVView;
+/** 文字标签*/
+@property (weak, nonatomic) IBOutlet UILabel *text_label;
+/** 图片帖子中间的内容 */
+@property (nonatomic, weak) NKTopicPictureView *pictureView;
 
 
 @end
 @implementation NKTopicCell
-- (void)awakeFromNib
-{
+- (NKTopicPictureView *)pictureView {
+    if (!_pictureView) {
+        NKTopicPictureView *pictureView = [NKTopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
+- (void)awakeFromNib {
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"mainCellBackground"];
     self.backgroundView = bgView;
 }
 
-- (void)setTopic:(NKTopic *)topic
-{
+- (void)setTopic:(NKTopic *)topic {
     _topic = topic;
 
     // 新浪加V
@@ -59,13 +71,24 @@
     [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
+
+    //设置文字
+    self.text_label.text = topic.text;
+
+    //根据帖子类型，添加不同pictureView
+    if (topic.type == NKTopicTypePicture) { // 图片帖子
+        self.pictureView.topic = topic;
+        self.pictureView.frame = topic.pictureF;
+    } else if (topic.type == NKTopicTypeVoice) { // 声音帖子
+        //        self.voiceView.topic = topic;
+        //        self.voiceView.frame = topic.voiceF;
+    }
 }
 
 /**
  * 设置底部按钮文字
  */
-- (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder
-{
+- (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder {
     if (count > 10000) {
         placeholder = [NSString stringWithFormat:@"%.1f万", count / 10000.0];
     } else if (count > 0) {
@@ -74,14 +97,11 @@
     [button setTitle:placeholder forState:UIControlStateNormal];
 }
 
-- (void)setFrame:(CGRect)frame
-{
-    static CGFloat margin = 10;
-
-    frame.origin.x = margin;
-    frame.size.width -= 2 * margin;
-    frame.size.height -= margin;
-    frame.origin.y += margin;
+- (void)setFrame:(CGRect)frame {
+    frame.origin.x = NKTopicCellMargin;
+    frame.size.width -= 2 * NKTopicCellMargin;
+    frame.size.height -= NKTopicCellMargin;
+    frame.origin.y += NKTopicCellMargin;
 
     [super setFrame:frame];
 }

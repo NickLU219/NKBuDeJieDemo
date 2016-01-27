@@ -100,8 +100,7 @@ static NSString * const NKUserId = @"user";
     }];
 }
 
-- (void)setupTableView
-{
+- (void)setupTableView {
     // 注册
     [self.categoryTableView registerNib:[UINib nibWithNibName:NSStringFromClass([NKRecommendCategoryTableViewCell class]) bundle:nil] forCellReuseIdentifier:NKCategoryId];
     [self.userTableView registerNib:[UINib nibWithNibName:NSStringFromClass([NKRecommendUserTableViewCell class]) bundle:nil] forCellReuseIdentifier:NKUserId];
@@ -135,7 +134,7 @@ static NSString * const NKUserId = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
-    params[@"category_id"] = @(category.id);
+    params[@"category_id"] = @(category.ID);
     params[@"page"] = @(category.current_page);
 
     self.params = params;
@@ -182,7 +181,7 @@ static NSString * const NKUserId = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
-    params[@"category_id"] = @(category.id);
+    params[@"category_id"] = @(category.ID);
     params[@"page"] = @(++category.current_page);
 
     self.params = params;
@@ -216,8 +215,7 @@ static NSString * const NKUserId = @"user";
 }
 
 #pragma mark - <UITableViewDataSource>
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     //左边表格
     if (tableView == self.categoryTableView)
         return self.categories.count;
@@ -227,8 +225,7 @@ static NSString * const NKUserId = @"user";
     return NKSelectedCategory.users.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == self.categoryTableView) { // 左边的类别表格
         NKRecommendCategoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NKCategoryId];
         cell.category = self.categories[indexPath.row];
@@ -242,8 +239,7 @@ static NSString * const NKUserId = @"user";
 }
 
 #pragma mark - <UITableViewDelegate>
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.userTableView.mj_header endRefreshing];
     [self.userTableView.mj_footer endRefreshing];
 

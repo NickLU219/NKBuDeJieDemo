@@ -9,8 +9,7 @@
 #import "UIBarButtonItem+NKExtension.h"
 
 @implementation UIBarButtonItem (NKExtension)
-+ (instancetype)itemWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action
-{
++ (instancetype)itemWithImage:(NSString *)image highImage:(NSString *)highImage target:(id)target action:(SEL)action {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [button setBackgroundImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];

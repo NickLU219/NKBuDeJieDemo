@@ -7,8 +7,12 @@
 //
 
 #import "NKRecommendCategory.h"
-
+#import <MJExtension.h>
 @implementation NKRecommendCategory
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{@"ID": @"id"};
+}
+
 - (NSMutableArray *)users {
     if (!_users) {
         _users = [NSMutableArray array];

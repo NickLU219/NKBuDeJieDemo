@@ -45,8 +45,7 @@
 /**
  * 让当前控制器对应的状态栏是白色
  */
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
+- (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 @end

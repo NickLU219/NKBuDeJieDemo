@@ -18,8 +18,7 @@
     [self removeFromSuperview];
 }
 
-+ (void)show
-{
++ (void)show {
     NSString *key = @"CFBundleShortVersionString";
 
     // 获得当前软件的版本号

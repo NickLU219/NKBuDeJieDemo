@@ -18,8 +18,7 @@
 @end
 @implementation NKRecommendUserTableViewCell
 
-- (void)setUser:(NKRecommendUser *)user
-{
+- (void)setUser:(NKRecommendUser *)user {
     _user = user;
 
     self.screenNameLabel.text = user.screen_name;

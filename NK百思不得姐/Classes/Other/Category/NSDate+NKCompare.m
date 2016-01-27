@@ -9,8 +9,7 @@
 #import "NSDate+NKCompare.h"
 
 @implementation NSDate (NKCompare)
-- (NSDateComponents *)deltaFrom:(NSDate *)from
-{
+- (NSDateComponents *)deltaFrom:(NSDate *)from {
     // 日历
     NSCalendar *calendar = [NSCalendar currentCalendar];
 
@@ -20,8 +19,7 @@
     return [calendar components:unit fromDate:from toDate:self options:0];
 }
 
-- (BOOL)isThisYear
-{
+- (BOOL)isThisYear {
     // 日历
     NSCalendar *calendar = [NSCalendar currentCalendar];
 
@@ -46,8 +44,7 @@
 //    && nowCmps.day == selfCmps.day;
 //}
 
-- (BOOL)isToday
-{
+- (BOOL)isToday {
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
     fmt.dateFormat = @"yyyy-MM-dd";
 
@@ -57,8 +54,7 @@
     return [nowString isEqualToString:selfString];
 }
 
-- (BOOL)isYesterday
-{
+- (BOOL)isYesterday {
     // 2014-12-31 23:59:59 -> 2014-12-31
     // 2015-01-01 00:00:01 -> 2015-01-01
 
