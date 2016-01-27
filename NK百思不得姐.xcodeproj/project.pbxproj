@@ -40,6 +40,8 @@
 		E3A04E281C5791270074DC75 /* NKShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E261C5791270074DC75 /* NKShowPictureViewController.m */; };
 		E3A04E291C5791270074DC75 /* NKShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E271C5791270074DC75 /* NKShowPictureViewController.xib */; };
 		E3A04E2C1C5793E70074DC75 /* NKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E2B1C5793E70074DC75 /* NKProgressView.m */; };
+		E3A04E5C1C5886C10074DC75 /* NKPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E5A1C5886C10074DC75 /* NKPublishViewController.m */; };
+		E3A04E5D1C5886C10074DC75 /* NKPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E5B1C5886C10074DC75 /* NKPublishViewController.xib */; };
 		E3FC71A71C535C99008BAC9B /* NKRecomendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */; };
 		E3FC71A81C535C99008BAC9B /* NKRecomendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */; };
 		E3FC71AD1C53633A008BAC9B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AC1C53633A008BAC9B /* Foundation+Log.m */; };
@@ -137,6 +139,9 @@
 		E3A04E271C5791270074DC75 /* NKShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKShowPictureViewController.xib; sourceTree = "<group>"; };
 		E3A04E2A1C5793E70074DC75 /* NKProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKProgressView.h; sourceTree = "<group>"; };
 		E3A04E2B1C5793E70074DC75 /* NKProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKProgressView.m; sourceTree = "<group>"; };
+		E3A04E591C5886C10074DC75 /* NKPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKPublishViewController.h; sourceTree = "<group>"; };
+		E3A04E5A1C5886C10074DC75 /* NKPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKPublishViewController.m; sourceTree = "<group>"; };
+		E3A04E5B1C5886C10074DC75 /* NKPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKPublishViewController.xib; sourceTree = "<group>"; };
 		E3FC71A41C535C99008BAC9B /* NKRecomendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRecomendViewController.h; sourceTree = "<group>"; };
 		E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRecomendViewController.m; sourceTree = "<group>"; };
 		E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKRecomendViewController.xib; sourceTree = "<group>"; };
@@ -485,6 +490,9 @@
 				E30B17F21C531D8C002554AC /* NKTabBarViewController.m */,
 				E30B18421C533A50002554AC /* NKNavigationController.h */,
 				E30B18431C533A50002554AC /* NKNavigationController.m */,
+				E3A04E591C5886C10074DC75 /* NKPublishViewController.h */,
+				E3A04E5A1C5886C10074DC75 /* NKPublishViewController.m */,
+				E3A04E5B1C5886C10074DC75 /* NKPublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -622,6 +630,7 @@
 				E31761A51C564ED0000B3DF0 /* NKPushGuideView.xib in Resources */,
 				E3A04E1E1C574F460074DC75 /* NKTopicPictureView.xib in Resources */,
 				E30B18461C534A0F002554AC /* NKFriendTrendsViewController.xib in Resources */,
+				E3A04E5D1C5886C10074DC75 /* NKPublishViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +709,7 @@
 				E30B17F81C531D8C002554AC /* NKEssenceViewController.m in Sources */,
 				E3A04D8D1C574BED0074DC75 /* NKTopicPictureView.m in Sources */,
 				E31761E31C5716E0000B3DF0 /* NKTopicCell.m in Sources */,
+				E3A04E5C1C5886C10074DC75 /* NKPublishViewController.m in Sources */,
 				E30B17FB1C531D8C002554AC /* NKNewViewController.m in Sources */,
 				E30B17F91C531D8C002554AC /* NKFriendTrendsViewController.m in Sources */,
 				E31761A01C5641B1000B3DF0 /* NKTextField.m in Sources */,
