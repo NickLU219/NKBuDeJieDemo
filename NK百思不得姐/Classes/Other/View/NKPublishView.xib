@@ -5,47 +5,37 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NKPublishViewController">
-            <connections>
-                <outlet property="view" destination="lm0-6x-J2s" id="2pI-LF-apt"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NKPublishView"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lm0-6x-J2s">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lm0-6x-J2s" customClass="NKPublishView">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="qg2-Pj-KGY" userLabel="背景">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLn-Q5-xvd" userLabel="取消">
-                    <rect key="frame" x="156" y="530" width="289" height="40"/>
+                    <rect key="frame" x="156" y="480" width="289" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="289" id="T1r-iU-r4c"/>
                         <constraint firstAttribute="height" constant="40" id="e4I-z3-lok"/>
                     </constraints>
-                    <state key="normal" backgroundImage="shareButtonCancel"/>
+                    <state key="normal" backgroundImage="shareButtonCancel">
+                        <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <state key="highlighted" backgroundImage="shareButtonCancelClick"/>
                     <connections>
-                        <action selector="cancel" destination="-1" eventType="touchUpInside" id="ADe-op-7KB"/>
+                        <action selector="cancel" destination="lm0-6x-J2s" eventType="touchUpInside" id="Fsk-lD-5xg"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="qg2-Pj-KGY" secondAttribute="trailing" id="Keb-2M-KAZ"/>
                 <constraint firstAttribute="centerX" secondItem="vLn-Q5-xvd" secondAttribute="centerX" id="M72-NF-JbV"/>
-                <constraint firstAttribute="bottom" secondItem="qg2-Pj-KGY" secondAttribute="bottom" id="Zqp-Aj-7s5"/>
-                <constraint firstAttribute="bottom" secondItem="vLn-Q5-xvd" secondAttribute="bottom" constant="30" id="fUC-N2-uw9"/>
-                <constraint firstItem="qg2-Pj-KGY" firstAttribute="leading" secondItem="lm0-6x-J2s" secondAttribute="leading" id="h5p-2s-pVJ"/>
-                <constraint firstItem="qg2-Pj-KGY" firstAttribute="top" secondItem="lm0-6x-J2s" secondAttribute="top" id="jIc-CC-rO0"/>
+                <constraint firstAttribute="bottom" secondItem="vLn-Q5-xvd" secondAttribute="bottom" constant="80" id="fUC-N2-uw9"/>
             </constraints>
             <point key="canvasLocation" x="512" y="393"/>
         </view>
     </objects>
     <resources>
-        <image name="shareBottomBackground" width="320" height="343"/>
         <image name="shareButtonCancel" width="289" height="40"/>
         <image name="shareButtonCancelClick" width="289" height="40"/>
     </resources>

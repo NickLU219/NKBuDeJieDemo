@@ -11,7 +11,6 @@
 
 @implementation NKTopic {
     CGFloat _cellHeight;
-    CGRect _pictureF;
 }
 
 + (NSDictionary *)replacedKeyFromPropertyName {
@@ -34,9 +33,9 @@
             NSDateComponents *cmps = [[NSDate date] deltaFrom:create];
 
             if (cmps.hour >= 1) { // 时间差距 >= 1小时
-                return [NSString stringWithFormat:@"%zd小时前", cmps.hour];
+                return [NSString stringWithFormat:@"%ld小时前", cmps.hour];
             } else if (cmps.minute >= 1) { // 1小时 > 时间差距 >= 1分钟
-                return [NSString stringWithFormat:@"%zd分钟前", cmps.minute];
+                return [NSString stringWithFormat:@"%ld分钟前", cmps.minute];
             } else { // 1分钟 > 时间差距
                 return @"刚刚";
             }
@@ -82,7 +81,21 @@
 
             _cellHeight += pictureH + NKTopicCellMargin;
         } else if (self.type == NKTopicTypeVoice) { // 声音帖子
+            CGFloat voiceX = NKTopicCellMargin;
+            CGFloat voiceY = NKTopicCellTextY + textH + NKTopicCellMargin;
+            CGFloat voiceW = maxSize.width;
+            CGFloat voiceH = voiceW * self.height / self.width;
+            _voiceF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
 
+            _cellHeight += voiceH + NKTopicCellMargin;
+        } else if (self.type == NKTopicTypeVideo) { //视频帖子
+            CGFloat videoX = NKTopicCellMargin;
+            CGFloat videoY = NKTopicCellTextY + textH + NKTopicCellMargin;
+            CGFloat videoW = maxSize.width;
+            CGFloat videoH = videoW * self.height / self.width;
+            _videoF = CGRectMake(videoX, videoY, videoW, videoH);
+
+            _cellHeight += videoH + NKTopicCellMargin;
         }
 
         // 底部工具条的高度

@@ -10,6 +10,8 @@
 #import "NKTopic.h"
 #import <UIImageView+WebCache.h>
 #import "NKTopicPictureView.h"
+#import "NKTopicVoiceView.h"
+#import "NKTopicVideoView.h"
 
 
 @interface NKTopicCell ()
@@ -33,6 +35,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *text_label;
 /** 图片帖子中间的内容 */
 @property (nonatomic, weak) NKTopicPictureView *pictureView;
+/** 声音帖子中间的内容 */
+@property (nonatomic, weak) NKTopicVoiceView *voiceView;
+/** 视频帖子中间的内容 */
+@property (nonatomic, weak) NKTopicVideoView *videoView;
 
 
 @end
@@ -45,6 +51,25 @@
     }
     return _pictureView;
 }
+
+- (NKTopicVoiceView *)voiceView {
+    if (!_voiceView) {
+        NKTopicVoiceView *voiceView = [NKTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+- (NKTopicVideoView *)videoView {
+    if (!_videoView) {
+        NKTopicVideoView *videoView = [NKTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
+}
+
 - (void)awakeFromNib {
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"mainCellBackground"];
@@ -77,11 +102,31 @@
 
     //根据帖子类型，添加不同pictureView
     if (topic.type == NKTopicTypePicture) { // 图片帖子
+        self.pictureView.hidden = NO;
         self.pictureView.topic = topic;
         self.pictureView.frame = topic.pictureF;
+
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
     } else if (topic.type == NKTopicTypeVoice) { // 声音帖子
-        //        self.voiceView.topic = topic;
-        //        self.voiceView.frame = topic.voiceF;
+        self.voiceView.hidden = NO;
+        self.voiceView.topic = topic;
+        self.voiceView.frame = topic.voiceF;
+
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+    } else if (topic.type == NKTopicTypeVideo) { //视频帖子
+        self.videoView.hidden = NO;
+        self.videoView.topic = topic;
+        self.videoView.frame = topic.videoF;
+
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+    } else if (topic.type == NKTopicTypeWord) {
+        self.pictureView.hidden = YES;
+
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
     }
 }
 
@@ -92,7 +137,7 @@
     if (count > 10000) {
         placeholder = [NSString stringWithFormat:@"%.1f万", count / 10000.0];
     } else if (count > 0) {
-        placeholder = [NSString stringWithFormat:@"%zd", count];
+        placeholder = [NSString stringWithFormat:@"%ld", count];
     }
     [button setTitle:placeholder forState:UIControlStateNormal];
 }

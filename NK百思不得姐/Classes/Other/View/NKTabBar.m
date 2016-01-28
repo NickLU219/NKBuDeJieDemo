@@ -7,7 +7,7 @@
 //
 
 #import "NKTabBar.h"
-#import "NKPublishViewController.h"
+#import "NKPublishView.h"
 
 @interface NKTabBar ()
 
@@ -34,8 +34,7 @@
 
 - (void)publishClick {
 
-    NKPublishViewController *publish = [[NKPublishViewController alloc] init];
-    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
+    [NKPublishView show];
 }
 
 - (void)layoutSubviews {

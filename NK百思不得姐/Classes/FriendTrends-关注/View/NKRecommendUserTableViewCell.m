@@ -25,7 +25,7 @@
 
     NSString *fans_count = nil;
     if (user.fans_count < 10000) {
-        fans_count = [NSString stringWithFormat:@"%zd人关注", user.fans_count];
+        fans_count = [NSString stringWithFormat:@"%ld人关注", user.fans_count];
     } else { // 大于等于10000
         fans_count = [NSString stringWithFormat:@"%.1f万人关注", user.fans_count / 10000.0];
     }

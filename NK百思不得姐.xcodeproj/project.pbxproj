@@ -40,8 +40,13 @@
 		E3A04E281C5791270074DC75 /* NKShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E261C5791270074DC75 /* NKShowPictureViewController.m */; };
 		E3A04E291C5791270074DC75 /* NKShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E271C5791270074DC75 /* NKShowPictureViewController.xib */; };
 		E3A04E2C1C5793E70074DC75 /* NKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E2B1C5793E70074DC75 /* NKProgressView.m */; };
-		E3A04E5C1C5886C10074DC75 /* NKPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E5A1C5886C10074DC75 /* NKPublishViewController.m */; };
-		E3A04E5D1C5886C10074DC75 /* NKPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E5B1C5886C10074DC75 /* NKPublishViewController.xib */; };
+		E3A04E601C58B7EC0074DC75 /* UIImage+NKTile.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E5F1C58B7EC0074DC75 /* UIImage+NKTile.m */; };
+		E3A04E641C58B82C0074DC75 /* NKPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E621C58B82C0074DC75 /* NKPublishView.m */; };
+		E3A04E651C58B82C0074DC75 /* NKPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E631C58B82C0074DC75 /* NKPublishView.xib */; };
+		E3A04E8C1C58F6150074DC75 /* NKTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E8B1C58F6150074DC75 /* NKTopicVoiceView.m */; };
+		E3A04E8E1C58F6260074DC75 /* NKTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E8D1C58F6260074DC75 /* NKTopicVoiceView.xib */; };
+		E3A04E911C5901140074DC75 /* NKTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E901C5901140074DC75 /* NKTopicVideoView.m */; };
+		E3A04E931C59014E0074DC75 /* NKTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E921C59014E0074DC75 /* NKTopicVideoView.xib */; };
 		E3FC71A71C535C99008BAC9B /* NKRecomendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */; };
 		E3FC71A81C535C99008BAC9B /* NKRecomendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */; };
 		E3FC71AD1C53633A008BAC9B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AC1C53633A008BAC9B /* Foundation+Log.m */; };
@@ -139,9 +144,17 @@
 		E3A04E271C5791270074DC75 /* NKShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKShowPictureViewController.xib; sourceTree = "<group>"; };
 		E3A04E2A1C5793E70074DC75 /* NKProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKProgressView.h; sourceTree = "<group>"; };
 		E3A04E2B1C5793E70074DC75 /* NKProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKProgressView.m; sourceTree = "<group>"; };
-		E3A04E591C5886C10074DC75 /* NKPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKPublishViewController.h; sourceTree = "<group>"; };
-		E3A04E5A1C5886C10074DC75 /* NKPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKPublishViewController.m; sourceTree = "<group>"; };
-		E3A04E5B1C5886C10074DC75 /* NKPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKPublishViewController.xib; sourceTree = "<group>"; };
+		E3A04E5E1C58B7EC0074DC75 /* UIImage+NKTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NKTile.h"; sourceTree = "<group>"; };
+		E3A04E5F1C58B7EC0074DC75 /* UIImage+NKTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NKTile.m"; sourceTree = "<group>"; };
+		E3A04E611C58B82C0074DC75 /* NKPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKPublishView.h; sourceTree = "<group>"; };
+		E3A04E621C58B82C0074DC75 /* NKPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKPublishView.m; sourceTree = "<group>"; };
+		E3A04E631C58B82C0074DC75 /* NKPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKPublishView.xib; sourceTree = "<group>"; };
+		E3A04E8A1C58F6150074DC75 /* NKTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTopicVoiceView.h; sourceTree = "<group>"; };
+		E3A04E8B1C58F6150074DC75 /* NKTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTopicVoiceView.m; sourceTree = "<group>"; };
+		E3A04E8D1C58F6260074DC75 /* NKTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKTopicVoiceView.xib; sourceTree = "<group>"; };
+		E3A04E8F1C5901140074DC75 /* NKTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTopicVideoView.h; sourceTree = "<group>"; };
+		E3A04E901C5901140074DC75 /* NKTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTopicVideoView.m; sourceTree = "<group>"; };
+		E3A04E921C59014E0074DC75 /* NKTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKTopicVideoView.xib; sourceTree = "<group>"; };
 		E3FC71A41C535C99008BAC9B /* NKRecomendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRecomendViewController.h; sourceTree = "<group>"; };
 		E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRecomendViewController.m; sourceTree = "<group>"; };
 		E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKRecomendViewController.xib; sourceTree = "<group>"; };
@@ -318,17 +331,15 @@
 		E30B17D51C531D8C002554AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3A04E891C58F5E60074DC75 /* cellInCell */,
+				E3A04E2A1C5793E70074DC75 /* NKProgressView.h */,
+				E3A04E2B1C5793E70074DC75 /* NKProgressView.m */,
 				E3FC71CF1C55122F008BAC9B /* NKRecommendTagCell.h */,
 				E3FC71D01C55122F008BAC9B /* NKRecommendTagCell.m */,
 				E3FC71D11C55122F008BAC9B /* NKRecommendTagCell.xib */,
 				E31761E01C5716E0000B3DF0 /* NKTopicCell.h */,
 				E31761E11C5716E0000B3DF0 /* NKTopicCell.m */,
 				E31761E21C5716E0000B3DF0 /* NKTopicCell.xib */,
-				E3A04D8B1C574BED0074DC75 /* NKTopicPictureView.h */,
-				E3A04D8C1C574BED0074DC75 /* NKTopicPictureView.m */,
-				E3A04E1D1C574F460074DC75 /* NKTopicPictureView.xib */,
-				E3A04E2A1C5793E70074DC75 /* NKProgressView.h */,
-				E3A04E2B1C5793E70074DC75 /* NKProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -473,6 +484,8 @@
 		E30B17EB1C531D8C002554AC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E3A04E5E1C58B7EC0074DC75 /* UIImage+NKTile.h */,
+				E3A04E5F1C58B7EC0074DC75 /* UIImage+NKTile.m */,
 				E30B17EC1C531D8C002554AC /* UIView+Extension.h */,
 				E30B17ED1C531D8C002554AC /* UIView+Extension.m */,
 				E30B18021C531DFC002554AC /* UIBarButtonItem+NKExtension.h */,
@@ -490,9 +503,6 @@
 				E30B17F21C531D8C002554AC /* NKTabBarViewController.m */,
 				E30B18421C533A50002554AC /* NKNavigationController.h */,
 				E30B18431C533A50002554AC /* NKNavigationController.m */,
-				E3A04E591C5886C10074DC75 /* NKPublishViewController.h */,
-				E3A04E5A1C5886C10074DC75 /* NKPublishViewController.m */,
-				E3A04E5B1C5886C10074DC75 /* NKPublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -500,6 +510,9 @@
 		E30B17F51C531D8C002554AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3A04E611C58B82C0074DC75 /* NKPublishView.h */,
+				E3A04E621C58B82C0074DC75 /* NKPublishView.m */,
+				E3A04E631C58B82C0074DC75 /* NKPublishView.xib */,
 				E30B17F61C531D8C002554AC /* NKTabBar.h */,
 				E30B17F71C531D8C002554AC /* NKTabBar.m */,
 				E31761A11C564EC1000B3DF0 /* NKPushGuideView.h */,
@@ -507,6 +520,22 @@
 				E31761A41C564ED0000B3DF0 /* NKPushGuideView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E3A04E891C58F5E60074DC75 /* cellInCell */ = {
+			isa = PBXGroup;
+			children = (
+				E3A04D8B1C574BED0074DC75 /* NKTopicPictureView.h */,
+				E3A04D8C1C574BED0074DC75 /* NKTopicPictureView.m */,
+				E3A04E1D1C574F460074DC75 /* NKTopicPictureView.xib */,
+				E3A04E8A1C58F6150074DC75 /* NKTopicVoiceView.h */,
+				E3A04E8B1C58F6150074DC75 /* NKTopicVoiceView.m */,
+				E3A04E8D1C58F6260074DC75 /* NKTopicVoiceView.xib */,
+				E3A04E8F1C5901140074DC75 /* NKTopicVideoView.h */,
+				E3A04E901C5901140074DC75 /* NKTopicVideoView.m */,
+				E3A04E921C59014E0074DC75 /* NKTopicVideoView.xib */,
+			);
+			name = cellInCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,11 +655,13 @@
 				E31761E41C5716E0000B3DF0 /* NKTopicCell.xib in Resources */,
 				E3FC71BB1C53F6EA008BAC9B /* NKRecommendCategoryTableViewCell.xib in Resources */,
 				E30B17871C5281F4002554AC /* Assets.xcassets in Resources */,
+				E3A04E931C59014E0074DC75 /* NKTopicVideoView.xib in Resources */,
 				E3FC71D31C55122F008BAC9B /* NKRecommendTagCell.xib in Resources */,
 				E31761A51C564ED0000B3DF0 /* NKPushGuideView.xib in Resources */,
+				E3A04E651C58B82C0074DC75 /* NKPublishView.xib in Resources */,
 				E3A04E1E1C574F460074DC75 /* NKTopicPictureView.xib in Resources */,
 				E30B18461C534A0F002554AC /* NKFriendTrendsViewController.xib in Resources */,
-				E3A04E5D1C5886C10074DC75 /* NKPublishViewController.xib in Resources */,
+				E3A04E8E1C58F6260074DC75 /* NKTopicVoiceView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,16 +737,18 @@
 				E30B17FD1C531D8C002554AC /* UIView+Extension.m in Sources */,
 				E30B17FA1C531D8C002554AC /* NKMeViewController.m in Sources */,
 				E3FC71A71C535C99008BAC9B /* NKRecomendViewController.m in Sources */,
+				E3A04E911C5901140074DC75 /* NKTopicVideoView.m in Sources */,
 				E30B17F81C531D8C002554AC /* NKEssenceViewController.m in Sources */,
 				E3A04D8D1C574BED0074DC75 /* NKTopicPictureView.m in Sources */,
 				E31761E31C5716E0000B3DF0 /* NKTopicCell.m in Sources */,
-				E3A04E5C1C5886C10074DC75 /* NKPublishViewController.m in Sources */,
 				E30B17FB1C531D8C002554AC /* NKNewViewController.m in Sources */,
 				E30B17F91C531D8C002554AC /* NKFriendTrendsViewController.m in Sources */,
 				E31761A01C5641B1000B3DF0 /* NKTextField.m in Sources */,
 				E30B18011C531D8C002554AC /* NKTabBar.m in Sources */,
 				E31761DF1C571682000B3DF0 /* NKTopic.m in Sources */,
+				E3A04E641C58B82C0074DC75 /* NKPublishView.m in Sources */,
 				E31761991C55DF24000B3DF0 /* NKLoginRegisterViewController.m in Sources */,
+				E3A04E8C1C58F6150074DC75 /* NKTopicVoiceView.m in Sources */,
 				E31761E71C571855000B3DF0 /* NSDate+NKCompare.m in Sources */,
 				E31761DC1C571528000B3DF0 /* NKTopicTableViewController.m in Sources */,
 				E30B17FC1C531D8C002554AC /* AppDelegate.m in Sources */,
@@ -725,6 +758,7 @@
 				E3FC71D21C55122F008BAC9B /* NKRecommendTagCell.m in Sources */,
 				E3FC71C71C53FCA9008BAC9B /* NKRecommendUserTableViewCell.m in Sources */,
 				E3A04E2C1C5793E70074DC75 /* NKProgressView.m in Sources */,
+				E3A04E601C58B7EC0074DC75 /* UIImage+NKTile.m in Sources */,
 				E30B17FF1C531D8C002554AC /* NKTabBarViewController.m in Sources */,
 				E3FC71CE1C5510AB008BAC9B /* NKRecommendTag.m in Sources */,
 				E3FC71AD1C53633A008BAC9B /* Foundation+Log.m in Sources */,

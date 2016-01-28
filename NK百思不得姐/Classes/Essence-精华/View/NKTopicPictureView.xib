@@ -47,7 +47,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="G2A-OW-sue" firstAttribute="leading" secondItem="X8q-3z-Xt6" secondAttribute="leading" id="1nK-eG-E2A"/>
                 <constraint firstAttribute="trailing" secondItem="9M1-DD-WCF" secondAttribute="trailing" id="2nE-Hb-TMD"/>
@@ -72,7 +72,7 @@
                 <outlet property="progressView" destination="4EM-ZG-emt" id="L3x-gc-tEI"/>
                 <outlet property="seeBigButton" destination="9M1-DD-WCF" id="EZw-Z6-zOL"/>
             </connections>
-            <point key="canvasLocation" x="589" y="317"/>
+            <point key="canvasLocation" x="572" y="301"/>
         </view>
     </objects>
     <resources>

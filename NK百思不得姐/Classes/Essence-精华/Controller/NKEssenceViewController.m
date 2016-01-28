@@ -43,15 +43,11 @@
  * 初始化子控制器
  */
 - (void)setupChildVces {
+
     NKTopicTableViewController *all = [[NKTopicTableViewController alloc] init];
     all.title = @"全部";
     all.type = NKTopicTypeAll;
     [self addChildViewController:all];
-
-    NKTopicTableViewController *picture = [[NKTopicTableViewController alloc] init];
-    picture.title = @"图片";
-    picture.type = NKTopicTypePicture;
-    [self addChildViewController:picture];
 
     NKTopicTableViewController *video = [[NKTopicTableViewController alloc] init];
     video.title = @"视频";
@@ -62,7 +58,12 @@
     voice.title = @"声音";
     voice.type = NKTopicTypeVoice;
     [self addChildViewController:voice];
-    
+
+    NKTopicTableViewController *picture = [[NKTopicTableViewController alloc] init];
+    picture.title = @"图片";
+    picture.type = NKTopicTypePicture;
+    [self addChildViewController:picture];
+
     NKTopicTableViewController *word = [[NKTopicTableViewController alloc] init];
     word.title = @"段子";
     word.type = NKTopicTypeWord;

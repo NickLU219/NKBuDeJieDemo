@@ -1,5 +1,5 @@
 //
-//  NKPublishViewController.h
+//  NKPublishView.h
 //  NK百思不得姐
 //
 //  Created by 陆金龙 on 16/1/27.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NKPublishViewController : UIViewController
-
+@interface NKPublishView : UIView
+/**
+ * 显示
+ */
++ (void)show;
 @end
