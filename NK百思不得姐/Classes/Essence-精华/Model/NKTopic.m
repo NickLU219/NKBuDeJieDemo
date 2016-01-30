@@ -8,6 +8,8 @@
 
 #import "NKTopic.h"
 #import <MJExtension.h>
+#import "NKComment.h"
+#import "NKUser.h"
 
 @implementation NKTopic {
     CGFloat _cellHeight;
@@ -17,9 +19,17 @@
     return @{
              @"small_image" : @"image0",
              @"large_image" : @"image1",
-             @"middle_image" : @"image2"
+             @"middle_image" : @"image2",
+             @"ID" : @"id",
+             @"top_cmt" : @"top_cmt[0]"
              };
 }
+
++ (NSDictionary *)objectClassInArray {
+    //    return @{@"top_cmt" : [XMGComment class]};
+    return @{@"top_cmt" : @"NKComment"};
+}
+
 - (NSString *)create_time {
     // 日期格式化类
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
@@ -96,6 +106,14 @@
             _videoF = CGRectMake(videoX, videoY, videoW, videoH);
 
             _cellHeight += videoH + NKTopicCellMargin;
+        }
+        // 如果有最热评论
+        if (self.top_cmt) {
+            NSString *content = [NSString stringWithFormat:@"%@ : %@", self.top_cmt.user.username, self.top_cmt.content];
+            CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+
+//            NKLog(@"%f", contentH);
+            _cellHeight += NKTopicCellTopCmtTitleH + contentH + NKTopicCellMargin;
         }
 
         // 底部工具条的高度

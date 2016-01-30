@@ -18,5 +18,6 @@
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint origin;
 
-
+/**  是否真正展示在界面上 */
+@property (nonatomic, assign) BOOL isShowingOnKeyWindow;
 @end

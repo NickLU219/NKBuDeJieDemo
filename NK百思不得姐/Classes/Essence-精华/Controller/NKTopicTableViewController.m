@@ -13,6 +13,7 @@
 #import <MJExtension.h>
 #import <MJRefresh.h>
 #import "NKTopicCell.h"
+#import "NKCommentViewController.h"
 
 @interface NKTopicTableViewController ()
 
@@ -178,5 +179,10 @@ static NSString * const NKTopicCellId = @"topic";
     return topic.cellHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NKCommentViewController *commentVc = [[NKCommentViewController alloc] init];
+    commentVc.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:commentVc animated:YES];
+}
 
 @end

@@ -12,6 +12,8 @@
 #import "NKTopicPictureView.h"
 #import "NKTopicVoiceView.h"
 #import "NKTopicVideoView.h"
+#import "NKComment.h"
+#import "NKUser.h"
 
 
 @interface NKTopicCell ()
@@ -39,10 +41,19 @@
 @property (nonatomic, weak) NKTopicVoiceView *voiceView;
 /** 视频帖子中间的内容 */
 @property (nonatomic, weak) NKTopicVideoView *videoView;
+/** 最热评论的内容 */
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
+/** 最热评论的整体 */
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
 
 
 @end
 @implementation NKTopicCell
+
++ (instancetype)cell {
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
+
 - (NKTopicPictureView *)pictureView {
     if (!_pictureView) {
         NKTopicPictureView *pictureView = [NKTopicPictureView pictureView];
@@ -128,6 +139,14 @@
         self.videoView.hidden = YES;
         self.voiceView.hidden = YES;
     }
+
+    // 处理最热评论
+    if (topic.top_cmt) {
+        self.topCmtView.hidden = NO;
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@", topic.top_cmt.user.username, topic.top_cmt.content];
+    } else {
+        self.topCmtView.hidden = YES;
+    }
 }
 
 /**
@@ -145,9 +164,14 @@
 - (void)setFrame:(CGRect)frame {
     frame.origin.x = NKTopicCellMargin;
     frame.size.width -= 2 * NKTopicCellMargin;
-    frame.size.height -= NKTopicCellMargin;
+    frame.size.height = self.topic.cellHeight - NKTopicCellMargin;
     frame.origin.y += NKTopicCellMargin;
 
     [super setFrame:frame];
+}
+
+- (IBAction)more {
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"收藏", @"举报", nil];
+    [sheet showInView:self.window];
 }
 @end

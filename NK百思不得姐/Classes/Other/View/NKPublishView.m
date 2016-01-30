@@ -136,11 +136,13 @@ static UIWindow *kWindow;
         // 监听最后一个动画
         if (i == self.subviews.count - 1) {
             [anim setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
-                !completionBlock ? : completionBlock();
-                
+
                 [self removeFromSuperview];
 
                 kWindow = nil;
+
+                !completionBlock ? : completionBlock();
+
             }];
         }
     }

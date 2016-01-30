@@ -14,4 +14,6 @@
 
 /** 帖子数据 */
 @property (nonatomic, strong) NKTopic *topic;
+
++ (instancetype)cell;
 @end

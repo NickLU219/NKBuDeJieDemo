@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NKComment.h"
 
 @interface NKTopic : NSObject
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 名称 */
 @property (nonatomic, copy) NSString *name;
 /** 头像 */
@@ -45,6 +48,8 @@
 @property (nonatomic, assign) NSInteger playcount;
 /** 视频时长 */
 @property (nonatomic, assign) NSInteger videotime;
+/** 最热评论 */
+@property (nonatomic, strong) NKComment *top_cmt;
 
 
 
