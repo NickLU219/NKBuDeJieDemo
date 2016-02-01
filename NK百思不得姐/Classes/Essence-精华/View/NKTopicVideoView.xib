@@ -28,7 +28,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-7j-2Dw" userLabel="播放时长">
-                    <rect key="frame" x="305.5" y="239" width="35.5" height="17"/>
+                    <rect key="frame" x="305" y="239" width="35.5" height="17"/>
                     <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,6 +41,9 @@
                         <constraint firstAttribute="height" constant="70" id="Vdl-px-5Uj"/>
                     </constraints>
                     <state key="normal" backgroundImage="video-play"/>
+                    <connections>
+                        <action selector="playVideo" destination="rEV-x7-9oV" eventType="touchUpInside" id="8hM-dj-7hu"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>

@@ -50,6 +50,10 @@
 @property (nonatomic, assign) NSInteger videotime;
 /** 最热评论 */
 @property (nonatomic, strong) NKComment *top_cmt;
+/**  视频地址 */
+@property (nonatomic, copy) NSString *videouri;
+/**  声音地址 */
+@property (nonatomic, copy) NSString *voiceuri;
 
 
 

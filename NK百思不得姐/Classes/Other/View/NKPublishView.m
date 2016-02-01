@@ -138,8 +138,8 @@ static UIWindow *kWindow;
             [anim setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
 
                 [self removeFromSuperview];
-
-                kWindow = nil;
+                kWindow.hidden = YES;
+//                kWindow = nil;
 
                 !completionBlock ? : completionBlock();
 

@@ -55,6 +55,9 @@
 		E3FAF1DC1C5B83C200EDF528 /* NKCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAF1DA1C5B83C200EDF528 /* NKCommentCell.m */; };
 		E3FAF1DD1C5B83C200EDF528 /* NKCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FAF1DB1C5B83C200EDF528 /* NKCommentCell.xib */; };
 		E3FAF1E01C5B9B4500EDF528 /* NKTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAF1DF1C5B9B4500EDF528 /* NKTopWindow.m */; };
+		E3FAF2181C5CDE1600EDF528 /* FullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAF2131C5CDE1600EDF528 /* FullViewController.m */; };
+		E3FAF21A1C5CDE1600EDF528 /* VideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAF2161C5CDE1600EDF528 /* VideoPlayView.m */; };
+		E3FAF21D1C5CE03F00EDF528 /* VideoPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FAF21C1C5CE03F00EDF528 /* VideoPlayView.xib */; };
 		E3FC71A71C535C99008BAC9B /* NKRecomendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */; };
 		E3FC71A81C535C99008BAC9B /* NKRecomendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */; };
 		E3FC71AD1C53633A008BAC9B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FC71AC1C53633A008BAC9B /* Foundation+Log.m */; };
@@ -177,6 +180,11 @@
 		E3FAF1DB1C5B83C200EDF528 /* NKCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKCommentCell.xib; sourceTree = "<group>"; };
 		E3FAF1DE1C5B9B4500EDF528 /* NKTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTopWindow.h; sourceTree = "<group>"; };
 		E3FAF1DF1C5B9B4500EDF528 /* NKTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTopWindow.m; sourceTree = "<group>"; };
+		E3FAF2121C5CDE1600EDF528 /* FullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullViewController.h; sourceTree = "<group>"; };
+		E3FAF2131C5CDE1600EDF528 /* FullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullViewController.m; sourceTree = "<group>"; };
+		E3FAF2151C5CDE1600EDF528 /* VideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayView.h; sourceTree = "<group>"; };
+		E3FAF2161C5CDE1600EDF528 /* VideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayView.m; sourceTree = "<group>"; };
+		E3FAF21C1C5CE03F00EDF528 /* VideoPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayView.xib; sourceTree = "<group>"; };
 		E3FC71A41C535C99008BAC9B /* NKRecomendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRecomendViewController.h; sourceTree = "<group>"; };
 		E3FC71A51C535C99008BAC9B /* NKRecomendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRecomendViewController.m; sourceTree = "<group>"; };
 		E3FC71A61C535C99008BAC9B /* NKRecomendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKRecomendViewController.xib; sourceTree = "<group>"; };
@@ -360,6 +368,7 @@
 		E30B17D51C531D8C002554AC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3FAF2111C5CDE1600EDF528 /* NKAudioPlayer */,
 				E3A04E891C58F5E60074DC75 /* cellInCell */,
 				E3A04E2A1C5793E70074DC75 /* NKProgressView.h */,
 				E3A04E2B1C5793E70074DC75 /* NKProgressView.m */,
@@ -574,6 +583,18 @@
 			name = cellInCell;
 			sourceTree = "<group>";
 		};
+		E3FAF2111C5CDE1600EDF528 /* NKAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E3FAF2121C5CDE1600EDF528 /* FullViewController.h */,
+				E3FAF2131C5CDE1600EDF528 /* FullViewController.m */,
+				E3FAF2151C5CDE1600EDF528 /* VideoPlayView.h */,
+				E3FAF2161C5CDE1600EDF528 /* VideoPlayView.m */,
+				E3FAF21C1C5CE03F00EDF528 /* VideoPlayView.xib */,
+			);
+			path = NKAudioPlayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -689,6 +710,7 @@
 				E3FC71A81C535C99008BAC9B /* NKRecomendViewController.xib in Resources */,
 				E317619A1C55DF24000B3DF0 /* NKLoginRegisterViewController.xib in Resources */,
 				E31761E41C5716E0000B3DF0 /* NKTopicCell.xib in Resources */,
+				E3FAF21D1C5CE03F00EDF528 /* VideoPlayView.xib in Resources */,
 				E3FC71BB1C53F6EA008BAC9B /* NKRecommendCategoryTableViewCell.xib in Resources */,
 				E30B17871C5281F4002554AC /* Assets.xcassets in Resources */,
 				E3A04E931C59014E0074DC75 /* NKTopicVideoView.xib in Resources */,
@@ -794,6 +816,7 @@
 				E30B17FC1C531D8C002554AC /* AppDelegate.m in Sources */,
 				E30B18001C531D8C002554AC /* main.m in Sources */,
 				E36B10771C5A4215003D4FDE /* NKComment.m in Sources */,
+				E3FAF21A1C5CDE1600EDF528 /* VideoPlayView.m in Sources */,
 				E31761E91C571A39000B3DF0 /* NKConst.m in Sources */,
 				E3FC71B61C53F67E008BAC9B /* NKRecommendCategory.m in Sources */,
 				E3FC71D21C55122F008BAC9B /* NKRecommendTagCell.m in Sources */,
@@ -807,6 +830,7 @@
 				E3FAF1DC1C5B83C200EDF528 /* NKCommentCell.m in Sources */,
 				E36B107B1C5A496F003D4FDE /* NKCommentViewController.m in Sources */,
 				E3FAF1D81C5B7AA300EDF528 /* NKCommentHeaderView.m in Sources */,
+				E3FAF2181C5CDE1600EDF528 /* FullViewController.m in Sources */,
 				E30B18041C531DFC002554AC /* UIBarButtonItem+NKExtension.m in Sources */,
 				E30B18441C533A50002554AC /* NKNavigationController.m in Sources */,
 				E3FC71BE1C53FC01008BAC9B /* NKRecommendUser.m in Sources */,

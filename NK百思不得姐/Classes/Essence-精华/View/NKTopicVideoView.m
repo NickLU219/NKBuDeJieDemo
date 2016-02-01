@@ -10,11 +10,13 @@
 #import "NKTopic.h"
 #import <UIImageView+WebCache.h>
 #import "NKShowPictureViewController.h"
+#import "VideoPlayView.h"
 
 @interface NKTopicVideoView ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *playcountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *videotimeLabel;
+@property (strong, nonatomic) VideoPlayView *videoPlayView;
 
 @end
 @implementation NKTopicVideoView
@@ -24,14 +26,17 @@
 
 - (void)awakeFromNib {
     self.autoresizingMask = UIViewAutoresizingNone;
-
+//    self.videoPlayView = [VideoPlayView videoPlayView];
+//    self.videoPlayView.hidden = YES;
     self.imageView.userInteractionEnabled = YES;
-    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPicture)]];
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(playVideo)]];
 }
-
-- (void)showPicture {
+- (IBAction)playVideo {
+    
     NKShowPictureViewController *showPicture = [[NKShowPictureViewController alloc] init];
     showPicture.topic = self.topic;
+    showPicture.video = YES;
+
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showPicture animated:YES completion:nil];
 }
 
