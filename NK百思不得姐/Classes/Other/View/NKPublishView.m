@@ -10,8 +10,8 @@
 #import "NKVerticalButton.h"
 #import <POP.h>
 
-static CGFloat const NKAnimationDelay = 0.05;
-static CGFloat const NKSpringFactor = 8;
+static CGFloat const kAnimationDelay = 0.05;
+static CGFloat const kSpringFactor = 8;
 @interface NKPublishView ()
 
 @end
@@ -74,9 +74,9 @@ static UIWindow *kWindow;
         POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
         anim.fromValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonBeginY, buttonW, buttonH)];
         anim.toValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonEndY, buttonW, buttonH)];
-        anim.springBounciness = NKSpringFactor;
-        anim.springSpeed = NKSpringFactor;
-        anim.beginTime = CACurrentMediaTime() + NKAnimationDelay * i;
+        anim.springBounciness = kSpringFactor;
+        anim.springSpeed = kSpringFactor;
+        anim.beginTime = CACurrentMediaTime() + kAnimationDelay * i;
         [button pop_addAnimation:anim forKey:nil];
     }
 
@@ -91,9 +91,9 @@ static UIWindow *kWindow;
     CGFloat centerBeginY = centerEndY - NKScreenH;
     anim.fromValue = [NSValue valueWithCGPoint:CGPointMake(centerX, centerBeginY)];
     anim.toValue = [NSValue valueWithCGPoint:CGPointMake(centerX, centerEndY)];
-    anim.beginTime = CACurrentMediaTime() + images.count * NKAnimationDelay;
-    anim.springBounciness = NKSpringFactor;
-    anim.springSpeed = NKSpringFactor;
+    anim.beginTime = CACurrentMediaTime() + images.count * kAnimationDelay;
+    anim.springBounciness = kSpringFactor;
+    anim.springSpeed = kSpringFactor;
     [anim setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
         // 标语动画执行完毕, 恢复点击事件
         self.userInteractionEnabled = YES;
@@ -130,7 +130,7 @@ static UIWindow *kWindow;
         CGFloat centerY = subview.centerY + NKScreenH;
 
         anim.toValue = [NSValue valueWithCGPoint:CGPointMake(subview.centerX, centerY)];
-        anim.beginTime = CACurrentMediaTime() + (i - beginIndex) * NKAnimationDelay;
+        anim.beginTime = CACurrentMediaTime() + (i - beginIndex) * kAnimationDelay;
         [subview pop_addAnimation:anim forKey:nil];
 
         // 监听最后一个动画

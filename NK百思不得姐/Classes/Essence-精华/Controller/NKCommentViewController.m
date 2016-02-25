@@ -132,8 +132,6 @@ static NSString * const NKCommentId = @"comment";
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [self.tableView.mj_header endRefreshing];
-//        NKLodFunc;
-//        NKLog(@"%@",error.userInfo);
     }];
 }
 
