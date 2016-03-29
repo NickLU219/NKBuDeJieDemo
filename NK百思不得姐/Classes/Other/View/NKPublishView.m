@@ -12,6 +12,7 @@
 
 static CGFloat const kAnimationDelay = 0.05;
 static CGFloat const kSpringFactor = 8;
+
 @interface NKPublishView ()
 
 @end

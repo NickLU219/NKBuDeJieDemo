@@ -8,12 +8,11 @@
 
 #import "NKTabBarViewController.h"
 #import "NKEssenceViewController.h"
-#import "NKMeViewController.h"
 #import "NKFriendTrendsViewController.h"
 #import "NKNewViewController.h"
 #import "NKTabBar.h"
 #import "NKNavigationController.h"
-
+#import "NKMainTabBarViewController.h"
 
 @interface NKTabBarViewController ()
 
@@ -42,13 +41,13 @@
 
 
     // 添加子控制器
-    [self setupChildVc:[[NKEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setupChildVc:[[NKEssenceViewController alloc] init] title:@"热门" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
 
-    [self setupChildVc:[[NKNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupChildVc:[[NKNewViewController alloc] init] title:@"微博" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
 
-    [self setupChildVc:[[NKFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
-
-    [self setupChildVc:[[NKMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupChildVc:[[NKMainTabBarViewController alloc] init] title:@"精品" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    
+    [self setupChildVc:[[NKFriendTrendsViewController alloc] init] title:@"盆友" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
 
     [self setValue:[[NKTabBar alloc]init] forKey: @"tabBar"];
 }
@@ -62,8 +61,12 @@
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     // 添加为子控制器
-    NKNavigationController *nav = [[NKNavigationController alloc] initWithRootViewController:vc];
-    [self addChildViewController:nav];
+    if ([vc isKindOfClass:[NKMainTabBarViewController class]]) {
+        [self addChildViewController:vc];
+    } else {
+        NKNavigationController *nav = [[NKNavigationController alloc] initWithRootViewController:vc];
+        [self addChildViewController:nav];
+    }
 }
 
 @end

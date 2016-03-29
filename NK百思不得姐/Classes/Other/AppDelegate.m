@@ -10,6 +10,7 @@
 #import "NKTabBarViewController.h"
 #import "NKPushGuideView.h"
 #import "NKTopWindow.h"
+#import <SDWebImageManager.h>
 
 @interface AppDelegate ()
 
@@ -55,6 +56,9 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    SDWebImageManager *mgr = [SDWebImageManager sharedManager];
+    [mgr cancelAll];
+    [mgr.imageCache clearMemory];
 }
 
 @end

@@ -13,7 +13,6 @@
 		E30B17A01C5281F5002554AC /* NK_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B179F1C5281F5002554AC /* NK_____UITests.m */; };
 		E30B17F81C531D8C002554AC /* NKEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17D31C531D8C002554AC /* NKEssenceViewController.m */; };
 		E30B17F91C531D8C002554AC /* NKFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17D91C531D8C002554AC /* NKFriendTrendsViewController.m */; };
-		E30B17FA1C531D8C002554AC /* NKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17DF1C531D8C002554AC /* NKMeViewController.m */; };
 		E30B17FB1C531D8C002554AC /* NKNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17E51C531D8C002554AC /* NKNewViewController.m */; };
 		E30B17FC1C531D8C002554AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17EA1C531D8C002554AC /* AppDelegate.m */; };
 		E30B17FD1C531D8C002554AC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B17ED1C531D8C002554AC /* UIView+Extension.m */; };
@@ -39,6 +38,36 @@
 		E36B10771C5A4215003D4FDE /* NKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B10761C5A4215003D4FDE /* NKComment.m */; };
 		E36B107B1C5A496F003D4FDE /* NKCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B10791C5A496F003D4FDE /* NKCommentViewController.m */; };
 		E36B107C1C5A496F003D4FDE /* NKCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B107A1C5A496F003D4FDE /* NKCommentViewController.xib */; };
+		E38A78171CAA9D1900E7E52E /* NKCategoryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77CD1CAA9D1900E7E52E /* NKCategoryCollectionViewController.m */; };
+		E38A78181CAA9D1900E7E52E /* NKHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77CF1CAA9D1900E7E52E /* NKHomeTableViewController.m */; };
+		E38A78191CAA9D1900E7E52E /* MBProgressHUD+BM.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77D21CAA9D1900E7E52E /* MBProgressHUD+BM.m */; };
+		E38A781A1CAA9D1900E7E52E /* NKCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77D51CAA9D1900E7E52E /* NKCategoryCollectionViewCell.m */; };
+		E38A781B1CAA9D1900E7E52E /* NKVideoTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77D71CAA9D1900E7E52E /* NKVideoTableHeaderView.m */; };
+		E38A781C1CAA9D1900E7E52E /* NKVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77D91CAA9D1900E7E52E /* NKVideoTableViewCell.m */; };
+		E38A781D1CAA9D1900E7E52E /* NSString+FormatterDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77DD1CAA9D1900E7E52E /* NSString+FormatterDate.m */; };
+		E38A781E1CAA9D1900E7E52E /* NSString+SizeWithString.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77DF1CAA9D1900E7E52E /* NSString+SizeWithString.m */; };
+		E38A781F1CAA9D1900E7E52E /* UIBarButtonItem+AddImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77E11CAA9D1900E7E52E /* UIBarButtonItem+AddImageItem.m */; };
+		E38A78201CAA9D1900E7E52E /* UILabel+TextHight.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77E31CAA9D1900E7E52E /* UILabel+TextHight.m */; };
+		E38A78211CAA9D1900E7E52E /* UIView+ConstraintHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77E51CAA9D1900E7E52E /* UIView+ConstraintHelper.m */; };
+		E38A78221CAA9D1900E7E52E /* UIView+XYWH.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77E71CAA9D1900E7E52E /* UIView+XYWH.m */; };
+		E38A78231CAA9D1900E7E52E /* NKCategoriesShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77EA1CAA9D1900E7E52E /* NKCategoriesShareViewController.m */; };
+		E38A78241CAA9D1900E7E52E /* NKCategoriesTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77EC1CAA9D1900E7E52E /* NKCategoriesTimeViewController.m */; };
+		E38A78251CAA9D1900E7E52E /* NKCatgoriesTimeAndShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77EE1CAA9D1900E7E52E /* NKCatgoriesTimeAndShareViewController.m */; };
+		E38A78261CAA9D1900E7E52E /* NKMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77F01CAA9D1900E7E52E /* NKMainTabBarViewController.m */; };
+		E38A78281CAA9D1900E7E52E /* FZLTXIHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E38A77F41CAA9D1900E7E52E /* FZLTXIHJW--GB1-0.TTF */; };
+		E38A78291CAA9D1900E7E52E /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E38A77F51CAA9D1900E7E52E /* FZLTZCHJW--GB1-0.TTF */; };
+		E38A782A1CAA9D1900E7E52E /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = E38A77F61CAA9D1900E7E52E /* Lobster 1.4.otf */; };
+		E38A782B1CAA9D1900E7E52E /* Categorie.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77F91CAA9D1900E7E52E /* Categorie.m */; };
+		E38A782C1CAA9D1900E7E52E /* Daily.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77FB1CAA9D1900E7E52E /* Daily.m */; };
+		E38A782D1CAA9D1900E7E52E /* NKHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77FD1CAA9D1900E7E52E /* NKHttpTool.m */; };
+		E38A782E1CAA9D1900E7E52E /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A77FF1CAA9D1900E7E52E /* Page.m */; };
+		E38A782F1CAA9D1900E7E52E /* Play.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A78011CAA9D1900E7E52E /* Play.m */; };
+		E38A78301CAA9D1900E7E52E /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A78031CAA9D1900E7E52E /* Video.m */; };
+		E38A78311CAA9D1900E7E52E /* NKAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A78061CAA9D1900E7E52E /* NKAutoFooter.m */; };
+		E38A78321CAA9D1900E7E52E /* NKMainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A78081CAA9D1900E7E52E /* NKMainTabBar.m */; };
+		E38A78331CAA9D1900E7E52E /* NKRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A780A1CAA9D1900E7E52E /* NKRefresh.m */; };
+		E38A78341CAA9D1900E7E52E /* NKVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A780E1CAA9D1900E7E52E /* NKVideoPlayerViewController.m */; };
+		E38A78351CAA9D1900E7E52E /* NKVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E38A78121CAA9D1900E7E52E /* NKVideoView.m */; };
 		E3A04D8D1C574BED0074DC75 /* NKTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04D8C1C574BED0074DC75 /* NKTopicPictureView.m */; };
 		E3A04E1E1C574F460074DC75 /* NKTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A04E1D1C574F460074DC75 /* NKTopicPictureView.xib */; };
 		E3A04E281C5791270074DC75 /* NKShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04E261C5791270074DC75 /* NKShowPictureViewController.m */; };
@@ -107,8 +136,6 @@
 		E30B17D31C531D8C002554AC /* NKEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKEssenceViewController.m; sourceTree = "<group>"; };
 		E30B17D81C531D8C002554AC /* NKFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKFriendTrendsViewController.h; sourceTree = "<group>"; };
 		E30B17D91C531D8C002554AC /* NKFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKFriendTrendsViewController.m; sourceTree = "<group>"; };
-		E30B17DE1C531D8C002554AC /* NKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKMeViewController.h; sourceTree = "<group>"; };
-		E30B17DF1C531D8C002554AC /* NKMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKMeViewController.m; sourceTree = "<group>"; };
 		E30B17E41C531D8C002554AC /* NKNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNewViewController.h; sourceTree = "<group>"; };
 		E30B17E51C531D8C002554AC /* NKNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNewViewController.m; sourceTree = "<group>"; };
 		E30B17E91C531D8C002554AC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +181,63 @@
 		E36B10781C5A496F003D4FDE /* NKCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCommentViewController.h; sourceTree = "<group>"; };
 		E36B10791C5A496F003D4FDE /* NKCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCommentViewController.m; sourceTree = "<group>"; };
 		E36B107A1C5A496F003D4FDE /* NKCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKCommentViewController.xib; sourceTree = "<group>"; };
+		E38A77CC1CAA9D1900E7E52E /* NKCategoryCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCategoryCollectionViewController.h; sourceTree = "<group>"; };
+		E38A77CD1CAA9D1900E7E52E /* NKCategoryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCategoryCollectionViewController.m; sourceTree = "<group>"; };
+		E38A77CE1CAA9D1900E7E52E /* NKHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeTableViewController.h; sourceTree = "<group>"; };
+		E38A77CF1CAA9D1900E7E52E /* NKHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeTableViewController.m; sourceTree = "<group>"; };
+		E38A77D11CAA9D1900E7E52E /* MBProgressHUD+BM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+BM.h"; sourceTree = "<group>"; };
+		E38A77D21CAA9D1900E7E52E /* MBProgressHUD+BM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BM.m"; sourceTree = "<group>"; };
+		E38A77D41CAA9D1900E7E52E /* NKCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		E38A77D51CAA9D1900E7E52E /* NKCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		E38A77D61CAA9D1900E7E52E /* NKVideoTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKVideoTableHeaderView.h; sourceTree = "<group>"; };
+		E38A77D71CAA9D1900E7E52E /* NKVideoTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKVideoTableHeaderView.m; sourceTree = "<group>"; };
+		E38A77D81CAA9D1900E7E52E /* NKVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKVideoTableViewCell.h; sourceTree = "<group>"; };
+		E38A77D91CAA9D1900E7E52E /* NKVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKVideoTableViewCell.m; sourceTree = "<group>"; };
+		E38A77DC1CAA9D1900E7E52E /* NSString+FormatterDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FormatterDate.h"; sourceTree = "<group>"; };
+		E38A77DD1CAA9D1900E7E52E /* NSString+FormatterDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FormatterDate.m"; sourceTree = "<group>"; };
+		E38A77DE1CAA9D1900E7E52E /* NSString+SizeWithString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SizeWithString.h"; sourceTree = "<group>"; };
+		E38A77DF1CAA9D1900E7E52E /* NSString+SizeWithString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SizeWithString.m"; sourceTree = "<group>"; };
+		E38A77E01CAA9D1900E7E52E /* UIBarButtonItem+AddImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AddImageItem.h"; sourceTree = "<group>"; };
+		E38A77E11CAA9D1900E7E52E /* UIBarButtonItem+AddImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AddImageItem.m"; sourceTree = "<group>"; };
+		E38A77E21CAA9D1900E7E52E /* UILabel+TextHight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextHight.h"; sourceTree = "<group>"; };
+		E38A77E31CAA9D1900E7E52E /* UILabel+TextHight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextHight.m"; sourceTree = "<group>"; };
+		E38A77E41CAA9D1900E7E52E /* UIView+ConstraintHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ConstraintHelper.h"; sourceTree = "<group>"; };
+		E38A77E51CAA9D1900E7E52E /* UIView+ConstraintHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ConstraintHelper.m"; sourceTree = "<group>"; };
+		E38A77E61CAA9D1900E7E52E /* UIView+XYWH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XYWH.h"; sourceTree = "<group>"; };
+		E38A77E71CAA9D1900E7E52E /* UIView+XYWH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XYWH.m"; sourceTree = "<group>"; };
+		E38A77E91CAA9D1900E7E52E /* NKCategoriesShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKCategoriesShareViewController.h; path = ../../Main/Controller/NKCategoriesShareViewController.h; sourceTree = "<group>"; };
+		E38A77EA1CAA9D1900E7E52E /* NKCategoriesShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKCategoriesShareViewController.m; path = ../../Main/Controller/NKCategoriesShareViewController.m; sourceTree = "<group>"; };
+		E38A77EB1CAA9D1900E7E52E /* NKCategoriesTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKCategoriesTimeViewController.h; path = ../../Main/Controller/NKCategoriesTimeViewController.h; sourceTree = "<group>"; };
+		E38A77EC1CAA9D1900E7E52E /* NKCategoriesTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKCategoriesTimeViewController.m; path = ../../Main/Controller/NKCategoriesTimeViewController.m; sourceTree = "<group>"; };
+		E38A77ED1CAA9D1900E7E52E /* NKCatgoriesTimeAndShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKCatgoriesTimeAndShareViewController.h; path = ../../Main/Controller/NKCatgoriesTimeAndShareViewController.h; sourceTree = "<group>"; };
+		E38A77EE1CAA9D1900E7E52E /* NKCatgoriesTimeAndShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKCatgoriesTimeAndShareViewController.m; path = ../../Main/Controller/NKCatgoriesTimeAndShareViewController.m; sourceTree = "<group>"; };
+		E38A77EF1CAA9D1900E7E52E /* NKMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKMainTabBarViewController.h; sourceTree = "<group>"; };
+		E38A77F01CAA9D1900E7E52E /* NKMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKMainTabBarViewController.m; sourceTree = "<group>"; };
+		E38A77F41CAA9D1900E7E52E /* FZLTXIHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTXIHJW--GB1-0.TTF"; sourceTree = "<group>"; };
+		E38A77F51CAA9D1900E7E52E /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
+		E38A77F61CAA9D1900E7E52E /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
+		E38A77F81CAA9D1900E7E52E /* Categorie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categorie.h; sourceTree = "<group>"; };
+		E38A77F91CAA9D1900E7E52E /* Categorie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categorie.m; sourceTree = "<group>"; };
+		E38A77FA1CAA9D1900E7E52E /* Daily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Daily.h; sourceTree = "<group>"; };
+		E38A77FB1CAA9D1900E7E52E /* Daily.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Daily.m; sourceTree = "<group>"; };
+		E38A77FC1CAA9D1900E7E52E /* NKHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHttpTool.h; sourceTree = "<group>"; };
+		E38A77FD1CAA9D1900E7E52E /* NKHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHttpTool.m; sourceTree = "<group>"; };
+		E38A77FE1CAA9D1900E7E52E /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		E38A77FF1CAA9D1900E7E52E /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		E38A78001CAA9D1900E7E52E /* Play.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Play.h; sourceTree = "<group>"; };
+		E38A78011CAA9D1900E7E52E /* Play.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Play.m; sourceTree = "<group>"; };
+		E38A78021CAA9D1900E7E52E /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		E38A78031CAA9D1900E7E52E /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		E38A78051CAA9D1900E7E52E /* NKAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAutoFooter.h; sourceTree = "<group>"; };
+		E38A78061CAA9D1900E7E52E /* NKAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKAutoFooter.m; sourceTree = "<group>"; };
+		E38A78071CAA9D1900E7E52E /* NKMainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKMainTabBar.h; sourceTree = "<group>"; };
+		E38A78081CAA9D1900E7E52E /* NKMainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKMainTabBar.m; sourceTree = "<group>"; };
+		E38A78091CAA9D1900E7E52E /* NKRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRefresh.h; sourceTree = "<group>"; };
+		E38A780A1CAA9D1900E7E52E /* NKRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRefresh.m; sourceTree = "<group>"; };
+		E38A780D1CAA9D1900E7E52E /* NKVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKVideoPlayerViewController.h; sourceTree = "<group>"; };
+		E38A780E1CAA9D1900E7E52E /* NKVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKVideoPlayerViewController.m; sourceTree = "<group>"; };
+		E38A78111CAA9D1900E7E52E /* NKVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKVideoView.h; sourceTree = "<group>"; };
+		E38A78121CAA9D1900E7E52E /* NKVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKVideoView.m; sourceTree = "<group>"; };
 		E3A04D8B1C574BED0074DC75 /* NKTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKTopicPictureView.h; sourceTree = "<group>"; };
 		E3A04D8C1C574BED0074DC75 /* NKTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKTopicPictureView.m; sourceTree = "<group>"; };
 		E3A04E1D1C574F460074DC75 /* NKTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NKTopicPictureView.xib; sourceTree = "<group>"; };
@@ -312,22 +396,23 @@
 		E30B17CF1C531D8C002554AC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E30B17D01C531D8C002554AC /* Essence-精华 */,
-				E30B17D61C531D8C002554AC /* FriendTrends-关注 */,
-				E30B17DC1C531D8C002554AC /* Me-我 */,
-				E30B17E21C531D8C002554AC /* New-新帖 */,
+				E30B17D01C531D8C002554AC /* Essence-热门 */,
+				E30B17D61C531D8C002554AC /* FriendTrends-盆友 */,
+				E30B17DC1C531D8C002554AC /* Me-精品 */,
+				E30B17E21C531D8C002554AC /* New-微博 */,
 				E30B17E81C531D8C002554AC /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		E30B17D01C531D8C002554AC /* Essence-精华 */ = {
+		E30B17D01C531D8C002554AC /* Essence-热门 */ = {
 			isa = PBXGroup;
 			children = (
 				E30B17D11C531D8C002554AC /* Controller */,
 				E30B17D41C531D8C002554AC /* Model */,
 				E30B17D51C531D8C002554AC /* View */,
 			);
+			name = "Essence-热门";
 			path = "Essence-精华";
 			sourceTree = "<group>";
 		};
@@ -387,13 +472,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E30B17D61C531D8C002554AC /* FriendTrends-关注 */ = {
+		E30B17D61C531D8C002554AC /* FriendTrends-盆友 */ = {
 			isa = PBXGroup;
 			children = (
 				E30B17D71C531D8C002554AC /* Controller */,
 				E30B17DA1C531D8C002554AC /* Model */,
 				E30B17DB1C531D8C002554AC /* View */,
 			);
+			name = "FriendTrends-盆友";
 			path = "FriendTrends-关注";
 			sourceTree = "<group>";
 		};
@@ -441,23 +527,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E30B17DC1C531D8C002554AC /* Me-我 */ = {
+		E30B17DC1C531D8C002554AC /* Me-精品 */ = {
 			isa = PBXGroup;
 			children = (
-				E30B17DD1C531D8C002554AC /* Controller */,
+				E38A77CA1CAA9D1900E7E52E /* Home */,
+				E38A77DA1CAA9D1900E7E52E /* Main */,
+				E38A780B1CAA9D1900E7E52E /* MoviePlayer */,
 				E30B17E01C531D8C002554AC /* Model */,
 				E30B17E11C531D8C002554AC /* View */,
 			);
+			name = "Me-精品";
 			path = "Me-我";
-			sourceTree = "<group>";
-		};
-		E30B17DD1C531D8C002554AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E30B17DE1C531D8C002554AC /* NKMeViewController.h */,
-				E30B17DF1C531D8C002554AC /* NKMeViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		E30B17E01C531D8C002554AC /* Model */ = {
@@ -474,13 +554,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E30B17E21C531D8C002554AC /* New-新帖 */ = {
+		E30B17E21C531D8C002554AC /* New-微博 */ = {
 			isa = PBXGroup;
 			children = (
 				E30B17E31C531D8C002554AC /* Controller */,
 				E30B17E61C531D8C002554AC /* Model */,
 				E30B17E71C531D8C002554AC /* View */,
 			);
+			name = "New-微博";
 			path = "New-新帖";
 			sourceTree = "<group>";
 		};
@@ -563,6 +644,172 @@
 				E31761A41C564ED0000B3DF0 /* NKPushGuideView.xib */,
 				E3FAF1DE1C5B9B4500EDF528 /* NKTopWindow.h */,
 				E3FAF1DF1C5B9B4500EDF528 /* NKTopWindow.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E38A77CA1CAA9D1900E7E52E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77CB1CAA9D1900E7E52E /* Controller */,
+				E38A77D01CAA9D1900E7E52E /* Model */,
+				E38A77D31CAA9D1900E7E52E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E38A77CB1CAA9D1900E7E52E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77CC1CAA9D1900E7E52E /* NKCategoryCollectionViewController.h */,
+				E38A77CD1CAA9D1900E7E52E /* NKCategoryCollectionViewController.m */,
+				E38A77CE1CAA9D1900E7E52E /* NKHomeTableViewController.h */,
+				E38A77CF1CAA9D1900E7E52E /* NKHomeTableViewController.m */,
+				E38A77E91CAA9D1900E7E52E /* NKCategoriesShareViewController.h */,
+				E38A77EA1CAA9D1900E7E52E /* NKCategoriesShareViewController.m */,
+				E38A77EB1CAA9D1900E7E52E /* NKCategoriesTimeViewController.h */,
+				E38A77EC1CAA9D1900E7E52E /* NKCategoriesTimeViewController.m */,
+				E38A77ED1CAA9D1900E7E52E /* NKCatgoriesTimeAndShareViewController.h */,
+				E38A77EE1CAA9D1900E7E52E /* NKCatgoriesTimeAndShareViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E38A77D01CAA9D1900E7E52E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77D11CAA9D1900E7E52E /* MBProgressHUD+BM.h */,
+				E38A77D21CAA9D1900E7E52E /* MBProgressHUD+BM.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E38A77D31CAA9D1900E7E52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77D41CAA9D1900E7E52E /* NKCategoryCollectionViewCell.h */,
+				E38A77D51CAA9D1900E7E52E /* NKCategoryCollectionViewCell.m */,
+				E38A77D61CAA9D1900E7E52E /* NKVideoTableHeaderView.h */,
+				E38A77D71CAA9D1900E7E52E /* NKVideoTableHeaderView.m */,
+				E38A77D81CAA9D1900E7E52E /* NKVideoTableViewCell.h */,
+				E38A77D91CAA9D1900E7E52E /* NKVideoTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E38A77DA1CAA9D1900E7E52E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77DB1CAA9D1900E7E52E /* Category */,
+				E38A77E81CAA9D1900E7E52E /* Controller */,
+				E38A77F31CAA9D1900E7E52E /* Font */,
+				E38A77F71CAA9D1900E7E52E /* Model */,
+				E38A78041CAA9D1900E7E52E /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E38A77DB1CAA9D1900E7E52E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77DC1CAA9D1900E7E52E /* NSString+FormatterDate.h */,
+				E38A77DD1CAA9D1900E7E52E /* NSString+FormatterDate.m */,
+				E38A77DE1CAA9D1900E7E52E /* NSString+SizeWithString.h */,
+				E38A77DF1CAA9D1900E7E52E /* NSString+SizeWithString.m */,
+				E38A77E01CAA9D1900E7E52E /* UIBarButtonItem+AddImageItem.h */,
+				E38A77E11CAA9D1900E7E52E /* UIBarButtonItem+AddImageItem.m */,
+				E38A77E21CAA9D1900E7E52E /* UILabel+TextHight.h */,
+				E38A77E31CAA9D1900E7E52E /* UILabel+TextHight.m */,
+				E38A77E41CAA9D1900E7E52E /* UIView+ConstraintHelper.h */,
+				E38A77E51CAA9D1900E7E52E /* UIView+ConstraintHelper.m */,
+				E38A77E61CAA9D1900E7E52E /* UIView+XYWH.h */,
+				E38A77E71CAA9D1900E7E52E /* UIView+XYWH.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E38A77E81CAA9D1900E7E52E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77EF1CAA9D1900E7E52E /* NKMainTabBarViewController.h */,
+				E38A77F01CAA9D1900E7E52E /* NKMainTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E38A77F31CAA9D1900E7E52E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77F41CAA9D1900E7E52E /* FZLTXIHJW--GB1-0.TTF */,
+				E38A77F51CAA9D1900E7E52E /* FZLTZCHJW--GB1-0.TTF */,
+				E38A77F61CAA9D1900E7E52E /* Lobster 1.4.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E38A77F71CAA9D1900E7E52E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E38A77F81CAA9D1900E7E52E /* Categorie.h */,
+				E38A77F91CAA9D1900E7E52E /* Categorie.m */,
+				E38A77FA1CAA9D1900E7E52E /* Daily.h */,
+				E38A77FB1CAA9D1900E7E52E /* Daily.m */,
+				E38A77FC1CAA9D1900E7E52E /* NKHttpTool.h */,
+				E38A77FD1CAA9D1900E7E52E /* NKHttpTool.m */,
+				E38A77FE1CAA9D1900E7E52E /* Page.h */,
+				E38A77FF1CAA9D1900E7E52E /* Page.m */,
+				E38A78001CAA9D1900E7E52E /* Play.h */,
+				E38A78011CAA9D1900E7E52E /* Play.m */,
+				E38A78021CAA9D1900E7E52E /* Video.h */,
+				E38A78031CAA9D1900E7E52E /* Video.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E38A78041CAA9D1900E7E52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E38A78051CAA9D1900E7E52E /* NKAutoFooter.h */,
+				E38A78061CAA9D1900E7E52E /* NKAutoFooter.m */,
+				E38A78071CAA9D1900E7E52E /* NKMainTabBar.h */,
+				E38A78081CAA9D1900E7E52E /* NKMainTabBar.m */,
+				E38A78091CAA9D1900E7E52E /* NKRefresh.h */,
+				E38A780A1CAA9D1900E7E52E /* NKRefresh.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E38A780B1CAA9D1900E7E52E /* MoviePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E38A780C1CAA9D1900E7E52E /* Controller */,
+				E38A780F1CAA9D1900E7E52E /* Model */,
+				E38A78101CAA9D1900E7E52E /* View */,
+			);
+			path = MoviePlayer;
+			sourceTree = "<group>";
+		};
+		E38A780C1CAA9D1900E7E52E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E38A780D1CAA9D1900E7E52E /* NKVideoPlayerViewController.h */,
+				E38A780E1CAA9D1900E7E52E /* NKVideoPlayerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E38A780F1CAA9D1900E7E52E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E38A78101CAA9D1900E7E52E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E38A78111CAA9D1900E7E52E /* NKVideoView.h */,
+				E38A78121CAA9D1900E7E52E /* NKVideoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -707,11 +954,13 @@
 			files = (
 				E3A04E291C5791270074DC75 /* NKShowPictureViewController.xib in Resources */,
 				E3FC71C81C53FCA9008BAC9B /* NKRecommendUserTableViewCell.xib in Resources */,
+				E38A78291CAA9D1900E7E52E /* FZLTZCHJW--GB1-0.TTF in Resources */,
 				E3FC71A81C535C99008BAC9B /* NKRecomendViewController.xib in Resources */,
 				E317619A1C55DF24000B3DF0 /* NKLoginRegisterViewController.xib in Resources */,
 				E31761E41C5716E0000B3DF0 /* NKTopicCell.xib in Resources */,
 				E3FAF21D1C5CE03F00EDF528 /* VideoPlayView.xib in Resources */,
 				E3FC71BB1C53F6EA008BAC9B /* NKRecommendCategoryTableViewCell.xib in Resources */,
+				E38A78281CAA9D1900E7E52E /* FZLTXIHJW--GB1-0.TTF in Resources */,
 				E30B17871C5281F4002554AC /* Assets.xcassets in Resources */,
 				E3A04E931C59014E0074DC75 /* NKTopicVideoView.xib in Resources */,
 				E3FC71D31C55122F008BAC9B /* NKRecommendTagCell.xib in Resources */,
@@ -719,6 +968,7 @@
 				E31761A51C564ED0000B3DF0 /* NKPushGuideView.xib in Resources */,
 				E3A04E651C58B82C0074DC75 /* NKPublishView.xib in Resources */,
 				E3A04E1E1C574F460074DC75 /* NKTopicPictureView.xib in Resources */,
+				E38A782A1CAA9D1900E7E52E /* Lobster 1.4.otf in Resources */,
 				E30B18461C534A0F002554AC /* NKFriendTrendsViewController.xib in Resources */,
 				E3FAF1DD1C5B83C200EDF528 /* NKCommentCell.xib in Resources */,
 				E3A04E8E1C58F6260074DC75 /* NKTopicVoiceView.xib in Resources */,
@@ -794,28 +1044,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38A78341CAA9D1900E7E52E /* NKVideoPlayerViewController.m in Sources */,
+				E38A78331CAA9D1900E7E52E /* NKRefresh.m in Sources */,
+				E38A782E1CAA9D1900E7E52E /* Page.m in Sources */,
 				E30B17FD1C531D8C002554AC /* UIView+Extension.m in Sources */,
-				E30B17FA1C531D8C002554AC /* NKMeViewController.m in Sources */,
+				E38A782B1CAA9D1900E7E52E /* Categorie.m in Sources */,
+				E38A781E1CAA9D1900E7E52E /* NSString+SizeWithString.m in Sources */,
 				E3FC71A71C535C99008BAC9B /* NKRecomendViewController.m in Sources */,
+				E38A78201CAA9D1900E7E52E /* UILabel+TextHight.m in Sources */,
 				E3A04E911C5901140074DC75 /* NKTopicVideoView.m in Sources */,
 				E30B17F81C531D8C002554AC /* NKEssenceViewController.m in Sources */,
+				E38A78351CAA9D1900E7E52E /* NKVideoView.m in Sources */,
+				E38A781B1CAA9D1900E7E52E /* NKVideoTableHeaderView.m in Sources */,
 				E36B10741C5A41FD003D4FDE /* NKUser.m in Sources */,
+				E38A782F1CAA9D1900E7E52E /* Play.m in Sources */,
 				E3A04D8D1C574BED0074DC75 /* NKTopicPictureView.m in Sources */,
+				E38A781A1CAA9D1900E7E52E /* NKCategoryCollectionViewCell.m in Sources */,
 				E31761E31C5716E0000B3DF0 /* NKTopicCell.m in Sources */,
 				E3FAF1E01C5B9B4500EDF528 /* NKTopWindow.m in Sources */,
 				E30B17FB1C531D8C002554AC /* NKNewViewController.m in Sources */,
 				E30B17F91C531D8C002554AC /* NKFriendTrendsViewController.m in Sources */,
+				E38A78171CAA9D1900E7E52E /* NKCategoryCollectionViewController.m in Sources */,
 				E31761A01C5641B1000B3DF0 /* NKTextField.m in Sources */,
 				E30B18011C531D8C002554AC /* NKTabBar.m in Sources */,
+				E38A78211CAA9D1900E7E52E /* UIView+ConstraintHelper.m in Sources */,
 				E31761DF1C571682000B3DF0 /* NKTopic.m in Sources */,
+				E38A78261CAA9D1900E7E52E /* NKMainTabBarViewController.m in Sources */,
 				E3A04E641C58B82C0074DC75 /* NKPublishView.m in Sources */,
 				E31761991C55DF24000B3DF0 /* NKLoginRegisterViewController.m in Sources */,
+				E38A78241CAA9D1900E7E52E /* NKCategoriesTimeViewController.m in Sources */,
 				E3A04E8C1C58F6150074DC75 /* NKTopicVoiceView.m in Sources */,
 				E31761E71C571855000B3DF0 /* NSDate+NKCompare.m in Sources */,
+				E38A78231CAA9D1900E7E52E /* NKCategoriesShareViewController.m in Sources */,
 				E31761DC1C571528000B3DF0 /* NKTopicTableViewController.m in Sources */,
 				E30B17FC1C531D8C002554AC /* AppDelegate.m in Sources */,
 				E30B18001C531D8C002554AC /* main.m in Sources */,
 				E36B10771C5A4215003D4FDE /* NKComment.m in Sources */,
+				E38A781D1CAA9D1900E7E52E /* NSString+FormatterDate.m in Sources */,
 				E3FAF21A1C5CDE1600EDF528 /* VideoPlayView.m in Sources */,
 				E31761E91C571A39000B3DF0 /* NKConst.m in Sources */,
 				E3FC71B61C53F67E008BAC9B /* NKRecommendCategory.m in Sources */,
@@ -823,6 +1088,10 @@
 				E3FC71C71C53FCA9008BAC9B /* NKRecommendUserTableViewCell.m in Sources */,
 				E3A04E2C1C5793E70074DC75 /* NKProgressView.m in Sources */,
 				E3A04E601C58B7EC0074DC75 /* UIImage+NKTile.m in Sources */,
+				E38A78251CAA9D1900E7E52E /* NKCatgoriesTimeAndShareViewController.m in Sources */,
+				E38A78221CAA9D1900E7E52E /* UIView+XYWH.m in Sources */,
+				E38A78321CAA9D1900E7E52E /* NKMainTabBar.m in Sources */,
+				E38A781C1CAA9D1900E7E52E /* NKVideoTableViewCell.m in Sources */,
 				E30B17FF1C531D8C002554AC /* NKTabBarViewController.m in Sources */,
 				E3FC71CE1C5510AB008BAC9B /* NKRecommendTag.m in Sources */,
 				E3FC71AD1C53633A008BAC9B /* Foundation+Log.m in Sources */,
@@ -831,12 +1100,19 @@
 				E36B107B1C5A496F003D4FDE /* NKCommentViewController.m in Sources */,
 				E3FAF1D81C5B7AA300EDF528 /* NKCommentHeaderView.m in Sources */,
 				E3FAF2181C5CDE1600EDF528 /* FullViewController.m in Sources */,
+				E38A782C1CAA9D1900E7E52E /* Daily.m in Sources */,
+				E38A78311CAA9D1900E7E52E /* NKAutoFooter.m in Sources */,
+				E38A781F1CAA9D1900E7E52E /* UIBarButtonItem+AddImageItem.m in Sources */,
+				E38A78301CAA9D1900E7E52E /* Video.m in Sources */,
 				E30B18041C531DFC002554AC /* UIBarButtonItem+NKExtension.m in Sources */,
+				E38A78191CAA9D1900E7E52E /* MBProgressHUD+BM.m in Sources */,
 				E30B18441C533A50002554AC /* NKNavigationController.m in Sources */,
 				E3FC71BE1C53FC01008BAC9B /* NKRecommendUser.m in Sources */,
+				E38A78181CAA9D1900E7E52E /* NKHomeTableViewController.m in Sources */,
 				E3A04E281C5791270074DC75 /* NKShowPictureViewController.m in Sources */,
 				E3FC71BA1C53F6EA008BAC9B /* NKRecommendCategoryTableViewCell.m in Sources */,
 				E31761A31C564EC1000B3DF0 /* NKPushGuideView.m in Sources */,
+				E38A782D1CAA9D1900E7E52E /* NKHttpTool.m in Sources */,
 				E3FC71CB1C550CFB008BAC9B /* NKRecommendTagsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
