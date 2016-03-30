@@ -19,10 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 设置导航栏标题
-    self.navigationItem.title = @"我的关注";
+    self.navigationItem.title = @"我的盆友";
 
     // 设置导航栏左边的按钮
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendClick)];
+//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendClick)];
 
     self.view.backgroundColor = GlobalBGColor;
 }

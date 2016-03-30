@@ -14,6 +14,7 @@
 #import "NKTopicVideoView.h"
 #import "NKComment.h"
 #import "NKUser.h"
+#import "NKNavigationController.h"
 
 
 @interface NKTopicCell ()
@@ -174,4 +175,5 @@
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"收藏", @"举报", nil];
     [sheet showInView:self.window];
 }
+
 @end
